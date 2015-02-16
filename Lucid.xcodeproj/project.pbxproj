@@ -13,6 +13,8 @@
 		46044DB41A8EA4B800F35CC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46044DB31A8EA4B800F35CC7 /* Images.xcassets */; };
 		46044DB71A8EA4B800F35CC7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46044DB51A8EA4B800F35CC7 /* LaunchScreen.xib */; };
 		46044DC31A8EA4B800F35CC7 /* LucidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46044DC21A8EA4B800F35CC7 /* LucidTests.swift */; };
+		467935671A91AD5A00ACC83B /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467935651A91AD5A00ACC83B /* Crashlytics.framework */; };
+		467935681A91AD5A00ACC83B /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467935661A91AD5A00ACC83B /* Fabric.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		46044DBC1A8EA4B800F35CC7 /* LucidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LucidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46044DC11A8EA4B800F35CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46044DC21A8EA4B800F35CC7 /* LucidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LucidTests.swift; sourceTree = "<group>"; };
+		467935651A91AD5A00ACC83B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		467935661A91AD5A00ACC83B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467935671A91AD5A00ACC83B /* Crashlytics.framework in Frameworks */,
+				467935681A91AD5A00ACC83B /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 		46044D9E1A8EA4B800F35CC7 = {
 			isa = PBXGroup;
 			children = (
+				467935651A91AD5A00ACC83B /* Crashlytics.framework */,
+				467935661A91AD5A00ACC83B /* Fabric.framework */,
 				46044DA91A8EA4B800F35CC7 /* Lucid */,
 				46044DBF1A8EA4B800F35CC7 /* LucidTests */,
 				46044DA81A8EA4B800F35CC7 /* Products */,
@@ -122,6 +130,7 @@
 				46044DA31A8EA4B800F35CC7 /* Sources */,
 				46044DA41A8EA4B800F35CC7 /* Frameworks */,
 				46044DA51A8EA4B800F35CC7 /* Resources */,
+				467935641A91AD4000ACC83B /* Init Fabric (or something) */,
 			);
 			buildRules = (
 			);
@@ -206,6 +215,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		467935641A91AD4000ACC83B /* Init Fabric (or something) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Init Fabric (or something)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run cf31bd871fb35d3e3e94b3732cd654bbde1f5b0c 33804315ff66b7966281403539d1d005fcf98139ee03282942a67832a10b0f8e";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46044DA31A8EA4B800F35CC7 /* Sources */ = {
@@ -336,6 +362,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Lucid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +376,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Lucid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +439,7 @@
 				46044DC81A8EA4B800F35CC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46044DC91A8EA4B800F35CC7 /* Build configuration list for PBXNativeTarget "LucidTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +448,7 @@
 				46044DCB1A8EA4B800F35CC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
