@@ -15,6 +15,7 @@
 		46044DC31A8EA4B800F35CC7 /* LucidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46044DC21A8EA4B800F35CC7 /* LucidTests.swift */; };
 		467935671A91AD5A00ACC83B /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467935651A91AD5A00ACC83B /* Crashlytics.framework */; };
 		467935681A91AD5A00ACC83B /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467935661A91AD5A00ACC83B /* Fabric.framework */; };
+		46BADD001A929D400036587B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BADCFF1A929D400036587B /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		46044DC21A8EA4B800F35CC7 /* LucidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LucidTests.swift; sourceTree = "<group>"; };
 		467935651A91AD5A00ACC83B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		467935661A91AD5A00ACC83B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		46BADCFF1A929D400036587B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		46044D9E1A8EA4B800F35CC7 = {
 			isa = PBXGroup;
 			children = (
+				46BADCFF1A929D400036587B /* UIViewControllerExtension.swift */,
 				46044DA91A8EA4B800F35CC7 /* Lucid */,
 				46BADCFE1A929B6B0036587B /* Frameworks */,
 				46044DBF1A8EA4B800F35CC7 /* LucidTests */,
@@ -248,6 +251,7 @@
 			files = (
 				46044DAF1A8EA4B800F35CC7 /* ViewController.swift in Sources */,
 				46044DAD1A8EA4B800F35CC7 /* AppDelegate.swift in Sources */,
+				46BADD001A929D400036587B /* UIViewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
