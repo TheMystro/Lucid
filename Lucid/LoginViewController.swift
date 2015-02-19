@@ -10,6 +10,13 @@ import UIKit
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var lucidLabel: UILabel!
+    @IBOutlet weak var nahLabel: UILabel!
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var goOrNahButton: UIButton!
+    
     override func viewDidLoad() {
         addTextDismiss()
         configureFonts()
@@ -17,6 +24,12 @@ class LoginViewController: UIViewController {
     }
     
     func configureFonts() {
-        lucidLabel.font = UIFont(name: "AJensonPro-Regular", size: 8)
+        lucidLabel.font = UIFont(name: "AJensonPro-Regular", size: 25)
+        nahLabel.font = UIFont(name: "AJensonPro-Regular", size: 25)
     }
+    
+    
+    @IBAction func goOrNahClick(sender: AnyObject) {
+    }
+    
 }
