@@ -24,12 +24,15 @@ class LoginViewController: UIViewController {
     }
     
     func configureFonts() {
-        lucidLabel.font = UIFont(name: "AJensonPro-Regular", size: 25)
-        nahLabel.font = UIFont(name: "AJensonPro-Regular", size: 25)
+        lucidLabel.font = UIFont(name: "AJensonPro-Regular", size: 30)
+        lucidLabel.kern(5)
+        
+        nahLabel.font = UIFont(name: "AJensonPro-Regular", size: 30)
     }
     
     
     @IBAction func goOrNahClick(sender: AnyObject) {
+        performSegueWithIdentifier("goToHome", sender: self)
     }
     
 }
