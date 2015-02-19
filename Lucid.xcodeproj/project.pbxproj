@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		46044DAD1A8EA4B800F35CC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46044DAC1A8EA4B800F35CC7 /* AppDelegate.swift */; };
-		46044DAF1A8EA4B800F35CC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46044DAE1A8EA4B800F35CC7 /* ViewController.swift */; };
 		46044DB21A8EA4B800F35CC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46044DB01A8EA4B800F35CC7 /* Main.storyboard */; };
 		46044DB41A8EA4B800F35CC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46044DB31A8EA4B800F35CC7 /* Images.xcassets */; };
 		46044DB71A8EA4B800F35CC7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46044DB51A8EA4B800F35CC7 /* LaunchScreen.xib */; };
 		46044DC31A8EA4B800F35CC7 /* LucidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46044DC21A8EA4B800F35CC7 /* LucidTests.swift */; };
+		465F92F71A96A02100BE0566 /* Adobe Jenson Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 465F92F61A96A01E00BE0566 /* Adobe Jenson Pro.ttf */; };
+		465F92F91A96A0F500BE0566 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F92F81A96A0F500BE0566 /* LoginViewController.swift */; };
 		467935671A91AD5A00ACC83B /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467935651A91AD5A00ACC83B /* Crashlytics.framework */; };
 		467935681A91AD5A00ACC83B /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467935661A91AD5A00ACC83B /* Fabric.framework */; };
 		46BADD001A929D400036587B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BADCFF1A929D400036587B /* UIViewControllerExtension.swift */; };
@@ -32,13 +33,14 @@
 		46044DA71A8EA4B800F35CC7 /* Lucid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lucid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46044DAB1A8EA4B800F35CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46044DAC1A8EA4B800F35CC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46044DAE1A8EA4B800F35CC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46044DB11A8EA4B800F35CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46044DB31A8EA4B800F35CC7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		46044DB61A8EA4B800F35CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		46044DBC1A8EA4B800F35CC7 /* LucidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LucidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46044DC11A8EA4B800F35CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46044DC21A8EA4B800F35CC7 /* LucidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LucidTests.swift; sourceTree = "<group>"; };
+		465F92F61A96A01E00BE0566 /* Adobe Jenson Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adobe Jenson Pro.ttf"; sourceTree = "<group>"; };
+		465F92F81A96A0F500BE0566 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		467935651A91AD5A00ACC83B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		467935661A91AD5A00ACC83B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		46BADCFF1A929D400036587B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = ../UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		46044D9E1A8EA4B800F35CC7 = {
 			isa = PBXGroup;
 			children = (
+				465F92F61A96A01E00BE0566 /* Adobe Jenson Pro.ttf */,
 				46044DA91A8EA4B800F35CC7 /* Lucid */,
 				46BADCFE1A929B6B0036587B /* Frameworks */,
 				46044DBF1A8EA4B800F35CC7 /* LucidTests */,
@@ -88,7 +91,7 @@
 			children = (
 				46BADCFF1A929D400036587B /* UIViewControllerExtension.swift */,
 				46044DAC1A8EA4B800F35CC7 /* AppDelegate.swift */,
-				46044DAE1A8EA4B800F35CC7 /* ViewController.swift */,
+				465F92F81A96A0F500BE0566 /* LoginViewController.swift */,
 				46044DB01A8EA4B800F35CC7 /* Main.storyboard */,
 				46044DB31A8EA4B800F35CC7 /* Images.xcassets */,
 				46044DB51A8EA4B800F35CC7 /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46044DB21A8EA4B800F35CC7 /* Main.storyboard in Resources */,
+				465F92F71A96A02100BE0566 /* Adobe Jenson Pro.ttf in Resources */,
 				46044DB71A8EA4B800F35CC7 /* LaunchScreen.xib in Resources */,
 				46044DB41A8EA4B800F35CC7 /* Images.xcassets in Resources */,
 			);
@@ -249,7 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46044DAF1A8EA4B800F35CC7 /* ViewController.swift in Sources */,
+				465F92F91A96A0F500BE0566 /* LoginViewController.swift in Sources */,
 				46044DAD1A8EA4B800F35CC7 /* AppDelegate.swift in Sources */,
 				46BADD001A929D400036587B /* UIViewControllerExtension.swift in Sources */,
 			);

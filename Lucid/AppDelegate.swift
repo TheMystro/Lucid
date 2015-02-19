@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Andrew Breckenridge. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import Fabric
 import Crashlytics
@@ -18,6 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Fabric.with([Crashlytics()])
+        
+        
+//        for font in UIFont.familyNames() {
+//            for name in UIFont.fontNamesForFamilyName(font as String) {
+//                println(name)
+//            }
+//        }
         
         return true
     }
