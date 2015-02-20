@@ -32,9 +32,9 @@
 		4663DF481A96B30700DCE3EE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4663DF3E1A96B30700DCE3EE /* SystemConfiguration.framework */; };
 		4663DF4A1A96B30D00DCE3EE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4663DF491A96B30D00DCE3EE /* libz.dylib */; };
 		4663DF4C1A96B31500DCE3EE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4663DF4B1A96B31500DCE3EE /* libsqlite3.dylib */; };
+		4663DF4E1A96B5B700DCE3EE /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4663DF4D1A96B5B700DCE3EE /* UIViewControllerExtension.swift */; };
 		467935671A91AD5A00ACC83B /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467935651A91AD5A00ACC83B /* Crashlytics.framework */; };
 		467935681A91AD5A00ACC83B /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467935661A91AD5A00ACC83B /* Fabric.framework */; };
-		46BADD001A929D400036587B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BADCFF1A929D400036587B /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,9 +78,9 @@
 		4663DF3E1A96B30700DCE3EE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4663DF491A96B30D00DCE3EE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4663DF4B1A96B31500DCE3EE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4663DF4D1A96B5B700DCE3EE /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		467935651A91AD5A00ACC83B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		467935661A91AD5A00ACC83B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		46BADCFF1A929D400036587B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = ../UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +143,7 @@
 		46044DA91A8EA4B800F35CC7 /* Lucid */ = {
 			isa = PBXGroup;
 			children = (
-				46BADCFF1A929D400036587B /* UIViewControllerExtension.swift */,
+				4663DF4D1A96B5B700DCE3EE /* UIViewControllerExtension.swift */,
 				4663DF231A96AFAC00DCE3EE /* UILabelExtension.swift */,
 				46044DAC1A8EA4B800F35CC7 /* AppDelegate.swift */,
 				465F92F81A96A0F500BE0566 /* LoginViewController.swift */,
@@ -161,7 +161,7 @@
 			children = (
 				46044DAB1A8EA4B800F35CC7 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		46044DBF1A8EA4B800F35CC7 /* LucidTests */ = {
@@ -178,7 +178,7 @@
 			children = (
 				46044DC11A8EA4B800F35CC7 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4663DF251A96B1B900DCE3EE /* parse-library */ = {
@@ -199,7 +199,7 @@
 			children = (
 				465F92F61A96A01E00BE0566 /* Adobe Jenson Pro.ttf */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		46BADCFE1A929B6B0036587B /* Frameworks */ = {
@@ -343,10 +343,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4663DF4E1A96B5B700DCE3EE /* UIViewControllerExtension.swift in Sources */,
 				4663DF241A96AFAC00DCE3EE /* UILabelExtension.swift in Sources */,
 				465F92F91A96A0F500BE0566 /* LoginViewController.swift in Sources */,
 				46044DAD1A8EA4B800F35CC7 /* AppDelegate.swift in Sources */,
-				46BADD001A929D400036587B /* UIViewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +375,7 @@
 				46044DB11A8EA4B800F35CC7 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		46044DB51A8EA4B800F35CC7 /* LaunchScreen.xib */ = {
@@ -383,6 +384,7 @@
 				46044DB61A8EA4B800F35CC7 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -475,7 +477,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/parse-library-1",
 				);
-				INFOPLIST_FILE = Lucid/Info.plist;
+				INFOPLIST_FILE = "Lucid/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Lucid/Lucid-Bridging-Header.h";
@@ -493,7 +495,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/parse-library-1",
 				);
-				INFOPLIST_FILE = Lucid/Info.plist;
+				INFOPLIST_FILE = "Lucid/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Lucid/Lucid-Bridging-Header.h";
@@ -512,7 +514,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = LucidTests/Info.plist;
+				INFOPLIST_FILE = "LucidTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lucid.app/Lucid";
@@ -527,7 +529,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = LucidTests/Info.plist;
+				INFOPLIST_FILE = "LucidTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lucid.app/Lucid";
