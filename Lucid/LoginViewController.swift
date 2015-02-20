@@ -24,10 +24,10 @@ class LoginViewController: UIViewController {
     }
     
     func configureFonts() {
-        lucidLabel.font = UIFont(name: "AJensonPro-Regular", size: 30)
+        lucidLabel.orJenson()
         lucidLabel.kern(5)
         
-        nahLabel.font = UIFont(name: "AJensonPro-Regular", size: 30)
+        nahLabel.orJenson()
     }
     
     
