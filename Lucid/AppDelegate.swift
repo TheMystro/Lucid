@@ -23,6 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId("HdxN3Vt0JIGNCDDQs2hTB92k9Yu8JnKRJHUnJnr1", clientKey: "FBkOu8pIBWInYTQZs0gEA1vkVy2nboMbkaPIWX2f")
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
         
+        let loggedIn = PFUser.currentUser() != nil
+        let storyboard = loggedIn ? "Home" : "Login"
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.rootViewController = (UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController)
+        window?.makeKeyAndVisible()
+        
+        
         return true
     }
 }

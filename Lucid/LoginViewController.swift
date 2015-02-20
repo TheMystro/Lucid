@@ -33,7 +33,9 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func goOrNahClick(sender: AnyObject) {
-        performSegueWithIdentifier("goToHome", sender: self)
+        let homeViewController = UIStoryboard(name: "Home", bundle: nil).instantiateInitialViewController() as UIViewController
+        
+        navigationController?.pushViewController(homeViewController, animated: true)
     }
     
 }

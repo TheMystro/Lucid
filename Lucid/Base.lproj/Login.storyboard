@@ -117,30 +117,11 @@
                         <outlet property="nahLabel" destination="dt2-ru-DPE" id="0P5-ei-RY8"/>
                         <outlet property="passwordTextField" destination="wfH-df-tdv" id="jFi-pC-BXu"/>
                         <outlet property="usernameTextField" destination="84c-0s-Qho" id="dd6-Tr-q0B"/>
-                        <segue destination="Un3-7T-vM9" kind="show" identifier="goToHome" id="NXb-jj-E1F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1057" y="337"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="uS8-i3-E67">
-            <objects>
-                <viewController id="Un3-7T-vM9" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Hom-TU-NTU"/>
-                        <viewControllerLayoutGuide type="bottom" id="own-nl-jqo"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="LPP-4l-nw2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OGw-6w-sIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1899" y="401"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BYr-ij-2TZ">
