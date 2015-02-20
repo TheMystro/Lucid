@@ -13,7 +13,7 @@ extension UILabel {
         self.font = UIFont(name: "AJensonPro-Regular", size: size)
     }
     
-    func kern(kerningValue:CGFloat) {
+    func kernBy(kerningValue:CGFloat) {
         self.attributedText =  NSAttributedString(string: self.text ?? "", attributes: [NSKernAttributeName:kerningValue, NSFontAttributeName:font, NSForegroundColorAttributeName:self.textColor])
     }
 }

@@ -124,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				4663DF341A96B2B800DCE3EE /* Resources */,
+				4663DF501A96B78A00DCE3EE /* Library */,
 				46044DA91A8EA4B800F35CC7 /* Lucid */,
 				46BADCFE1A929B6B0036587B /* Frameworks */,
 				46044DBF1A8EA4B800F35CC7 /* LucidTests */,
@@ -143,8 +144,6 @@
 		46044DA91A8EA4B800F35CC7 /* Lucid */ = {
 			isa = PBXGroup;
 			children = (
-				4663DF4D1A96B5B700DCE3EE /* UIViewControllerExtension.swift */,
-				4663DF231A96AFAC00DCE3EE /* UILabelExtension.swift */,
 				46044DAC1A8EA4B800F35CC7 /* AppDelegate.swift */,
 				465F92F81A96A0F500BE0566 /* LoginViewController.swift */,
 				46044DB01A8EA4B800F35CC7 /* Main.storyboard */,
@@ -200,6 +199,24 @@
 				465F92F61A96A01E00BE0566 /* Adobe Jenson Pro.ttf */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4663DF4F1A96B78200DCE3EE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4663DF4D1A96B5B700DCE3EE /* UIViewControllerExtension.swift */,
+				4663DF231A96AFAC00DCE3EE /* UILabelExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		4663DF501A96B78A00DCE3EE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4663DF4F1A96B78200DCE3EE /* Extensions */,
+			);
+			name = Library;
+			path = Lucid;
 			sourceTree = "<group>";
 		};
 		46BADCFE1A929B6B0036587B /* Frameworks */ = {

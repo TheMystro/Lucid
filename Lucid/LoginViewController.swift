@@ -20,12 +20,13 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         addTextDismiss()
+        registerForKeyboard()
         configureFonts()
     }
     
     func configureFonts() {
         lucidLabel.orJenson()
-        lucidLabel.kern(5)
+        lucidLabel.kernBy(5)
         
         nahLabel.orJenson()
     }

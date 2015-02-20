@@ -29,10 +29,10 @@ extension UIViewController {
     }
     
     func keyboardWasShown(id: AnyObject) {
-        
+        println("Pick your ass up")
     }
     
     func keyboardWillBeHidden(id: AnyObject) {
-        
+        println("drop it drop it low")
     }
 }
