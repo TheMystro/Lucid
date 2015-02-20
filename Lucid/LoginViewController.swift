@@ -9,6 +9,7 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
     @IBOutlet weak var lucidLabel: UILabel!
     @IBOutlet weak var nahLabel: UILabel!
     
@@ -20,7 +21,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         addTextDismiss()
         configureFonts()
-        
     }
     
     func configureFonts() {

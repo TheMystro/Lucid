@@ -16,16 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Fabric.with([Crashlytics()])
         
-        
-//        for font in UIFont.familyNames() {
-//            for name in UIFont.fontNamesForFamilyName(font as String) {
-//                println(name)
-//            }
-//        }
+        Parse.enableLocalDatastore()
+        Parse.setApplicationId("HdxN3Vt0JIGNCDDQs2hTB92k9Yu8JnKRJHUnJnr1", clientKey: "FBkOu8pIBWInYTQZs0gEA1vkVy2nboMbkaPIWX2f")
+        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
         
         return true
     }
