@@ -18,6 +18,14 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var goOrNahButton: UIButton!
     
+    
+    @IBOutlet weak var loginFacebookButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
+    
+    
+    
+    
     override func viewDidLoad() {
         addTextDismiss()
         registerForKeyboard()
@@ -26,10 +34,14 @@ class LoginViewController: UIViewController {
     
     func configureFonts() {
         lucidLabel.orJenson()
-        lucidLabel.kernBy(5)
+        lucidLabel.kernBy(3.141579263)
         
         nahLabel.orJenson(size: 14)
         nahLabel.kernBy(1)
+        
+        loginFacebookButton.titleLabel?.orJenson(size: 17)
+        loginButton.titleLabel?.orJenson(size: 17)
+        signupButton.titleLabel?.orJenson(size: 17)
     }
     
     
@@ -39,4 +51,7 @@ class LoginViewController: UIViewController {
         navigationController?.pushViewController(homeViewController, animated: true)
     }
     
+    @IBAction func loginWithFacebookWasHit(sender: AnyObject) {
+        
+    }
 }
