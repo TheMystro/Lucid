@@ -19,26 +19,26 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucid" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5Q-M1-J9Q">
-                                <rect key="frame" x="279" y="320" width="43" height="21"/>
+                                <rect key="frame" x="279" y="321" width="43" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image=":logo-02" translatesAutoresizingMaskIntoConstraints="NO" id="lpq-01-jib">
-                                <rect key="frame" x="200" y="83" width="200" height="200"/>
+                                <rect key="frame" x="200" y="84" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="6yG-jq-21A"/>
                                     <constraint firstAttribute="width" secondItem="lpq-01-jib" secondAttribute="height" id="lYZ-mX-jQj"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn method to lucid dream" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dt2-ru-DPE">
-                                <rect key="frame" x="60" y="361" width="480" height="15"/>
+                                <rect key="frame" x="60" y="360" width="480" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njB-1V-1hB">
-                                <rect key="frame" x="231" y="439" width="138" height="30"/>
+                                <rect key="frame" x="231" y="438" width="138" height="30"/>
                                 <state key="normal" title="log in with facebook">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,14 +48,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdK-tS-xd4">
-                                <rect key="frame" x="281" y="473" width="38" height="30"/>
+                                <rect key="frame" x="281" y="472" width="38" height="30"/>
                                 <state key="normal" title="log in">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygq-wK-Mta">
-                                <rect key="frame" x="275" y="507" width="51" height="30"/>
+                                <rect key="frame" x="275" y="506" width="51" height="30"/>
                                 <state key="normal" title="sign up">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -85,7 +85,7 @@
                             <constraint firstItem="dt2-ru-DPE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="44" id="0ct-2Z-LSB"/>
                             <constraint firstItem="xdK-tS-xd4" firstAttribute="top" secondItem="njB-1V-1hB" secondAttribute="bottom" constant="4" id="1Fd-dK-5F2"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="yc1-qO-oiP" secondAttribute="bottom" id="3Jh-Ta-xwL"/>
-                            <constraint firstItem="dt2-ru-DPE" firstAttribute="top" secondItem="E5Q-M1-J9Q" secondAttribute="bottom" constant="20" id="4q7-6u-6iB"/>
+                            <constraint firstItem="dt2-ru-DPE" firstAttribute="top" secondItem="E5Q-M1-J9Q" secondAttribute="bottom" constant="18" id="4q7-6u-6iB"/>
                             <constraint firstItem="lpq-01-jib" firstAttribute="top" secondItem="te9-ku-sIc" secondAttribute="bottom" id="5bS-Ta-8rA"/>
                             <constraint firstAttribute="centerX" secondItem="yc1-qO-oiP" secondAttribute="centerX" id="5pE-7V-MSe"/>
                             <constraint firstItem="ygq-wK-Mta" firstAttribute="top" secondItem="xdK-tS-xd4" secondAttribute="bottom" constant="4" id="6rg-uz-hfL"/>
@@ -113,11 +113,53 @@
                         <outlet property="lucidLabel" destination="E5Q-M1-J9Q" id="3I0-eu-QFY"/>
                         <outlet property="nahLabel" destination="dt2-ru-DPE" id="0P5-ei-RY8"/>
                         <outlet property="signupButton" destination="ygq-wK-Mta" id="AMu-uL-j5q"/>
+                        <segue destination="qFU-4P-5pU" kind="presentation" identifier="segueToTutorial" id="Ayq-88-TFe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1057" y="337"/>
+        </scene>
+        <!--Tutorial Pages View Controller-->
+        <scene sceneID="XYx-y8-mcf">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="qFU-4P-5pU" customClass="TutorialPagesViewController" customModule="Lucid" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p0l-yX-BR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="1089"/>
+        </scene>
+        <!--tutorialPageVC-->
+        <scene sceneID="gn9-iw-Ngv">
+            <objects>
+                <viewController storyboardIdentifier="tutorialPageVC" title="tutorialPageVC" modalTransitionStyle="flipHorizontal" id="Yhe-eb-mjI" customClass="TutorialPageVC" customModule="Lucid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8UV-oj-xIz"/>
+                        <viewControllerLayoutGuide type="bottom" id="kCQ-D6-n2F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3kX-IO-fXM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text for bitchy asian stoner" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydk-zu-LPm">
+                                <rect key="frame" x="198" y="289" width="205" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="ydk-zu-LPm" secondAttribute="centerX" constant="-0.5" id="j1C-X2-dw4"/>
+                            <constraint firstAttribute="centerY" secondItem="ydk-zu-LPm" secondAttribute="centerY" constant="0.5" id="pic-1Y-8zC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainTextLabel" destination="ydk-zu-LPm" id="t2o-u4-RFP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nWn-Zz-0rc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693" y="1341"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BYr-ij-2TZ">

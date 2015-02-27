@@ -13,17 +13,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var lucidLabel: UILabel!
     @IBOutlet weak var nahLabel: UILabel!
     
-    @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    
-    @IBOutlet weak var goOrNahButton: UIButton!
-    
-    
     @IBOutlet weak var loginFacebookButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
-    
-    
     
     
     override func viewDidLoad() {
@@ -52,6 +44,6 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginWithFacebookWasHit(sender: AnyObject) {
-        
+        performSegueWithIdentifier("segueToTutorial", sender: self)
     }
 }
