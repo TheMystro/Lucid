@@ -16,6 +16,13 @@
 		461DB2AA1AA053A0000AACF4 /* TutorialPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DB2A91AA053A0000AACF4 /* TutorialPageVC.swift */; };
 		461DB2AC1AA055A8000AACF4 /* TutorialPageViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DB2AB1AA055A8000AACF4 /* TutorialPageViewControllerDataSource.swift */; };
 		461DB2AE1AA05D00000AACF4 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 461DB2AD1AA05D00000AACF4 /* libstdc++.6.dylib */; };
+		461DB2B31AA060CC000AACF4 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461DB2B21AA060CC000AACF4 /* Accounts.framework */; };
+		461DB3D01AA06161000AACF4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461DB2B51AA06160000AACF4 /* Bolts.framework */; };
+		461DB3D11AA06161000AACF4 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461DB2B61AA06160000AACF4 /* FacebookSDK.framework */; };
+		461DB3D21AA06161000AACF4 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461DB2B71AA06160000AACF4 /* FBAudienceNetwork.framework */; };
+		461DB3D31AA06161000AACF4 /* FBAudienceNetwork.README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 461DB2B81AA06160000AACF4 /* FBAudienceNetwork.README.txt */; };
+		461DB3D41AA06161000AACF4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 461DB2B91AA06160000AACF4 /* LICENSE */; };
+		461DB3D51AA06161000AACF4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 461DB2BA1AA06160000AACF4 /* README.txt */; };
 		465F92F71A96A02100BE0566 /* Adobe Jenson Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 465F92F61A96A01E00BE0566 /* Adobe Jenson Pro.ttf */; };
 		465F92F91A96A0F500BE0566 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F92F81A96A0F500BE0566 /* LoginViewController.swift */; };
 		4663DF241A96AFAC00DCE3EE /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4663DF231A96AFAC00DCE3EE /* UILabelExtension.swift */; };
@@ -68,6 +75,13 @@
 		461DB2AB1AA055A8000AACF4 /* TutorialPageViewControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageViewControllerDataSource.swift; sourceTree = "<group>"; };
 		461DB2AD1AA05D00000AACF4 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		461DB2AF1AA05D1C000AACF4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		461DB2B21AA060CC000AACF4 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		461DB2B51AA06160000AACF4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		461DB2B61AA06160000AACF4 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		461DB2B71AA06160000AACF4 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		461DB2B81AA06160000AACF4 /* FBAudienceNetwork.README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FBAudienceNetwork.README.txt; sourceTree = "<group>"; };
+		461DB2B91AA06160000AACF4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		461DB2BA1AA06160000AACF4 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		465F92F61A96A01E00BE0566 /* Adobe Jenson Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adobe Jenson Pro.ttf"; sourceTree = "<group>"; };
 		465F92F81A96A0F500BE0566 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4663DF231A96AFAC00DCE3EE /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
@@ -102,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461DB2B31AA060CC000AACF4 /* Accounts.framework in Frameworks */,
 				461DB2AE1AA05D00000AACF4 /* libstdc++.6.dylib in Frameworks */,
 				4663DF4C1A96B31500DCE3EE /* libsqlite3.dylib in Frameworks */,
 				4663DF4A1A96B30D00DCE3EE /* libz.dylib in Frameworks */,
@@ -113,13 +128,16 @@
 				4663DF441A96B30700DCE3EE /* QuartzCore.framework in Frameworks */,
 				4663DF451A96B30700DCE3EE /* Security.framework in Frameworks */,
 				4663DF461A96B30700DCE3EE /* Social.framework in Frameworks */,
+				461DB3D11AA06161000AACF4 /* FacebookSDK.framework in Frameworks */,
 				4663DF481A96B30700DCE3EE /* SystemConfiguration.framework in Frameworks */,
 				4663DF2B1A96B1B900DCE3EE /* Bolts.framework in Frameworks */,
+				461DB3D21AA06161000AACF4 /* FBAudienceNetwork.framework in Frameworks */,
 				4663DF2D1A96B1B900DCE3EE /* ParseCrashReporting.framework in Frameworks */,
 				4663DF2F1A96B1B900DCE3EE /* ParseUI.framework in Frameworks */,
 				4663DF2E1A96B1B900DCE3EE /* ParseFacebookUtils.framework in Frameworks */,
 				467935671A91AD5A00ACC83B /* Crashlytics.framework in Frameworks */,
 				4663DF2C1A96B1B900DCE3EE /* Parse.framework in Frameworks */,
+				461DB3D01AA06161000AACF4 /* Bolts.framework in Frameworks */,
 				467935681A91AD5A00ACC83B /* Fabric.framework in Frameworks */,
 				49BF44BBB11B047CCE3856F5 /* libPods.a in Frameworks */,
 			);
@@ -208,6 +226,19 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
+		461DB2B41AA06160000AACF4 /* FacebookSDK */ = {
+			isa = PBXGroup;
+			children = (
+				461DB2B51AA06160000AACF4 /* Bolts.framework */,
+				461DB2B61AA06160000AACF4 /* FacebookSDK.framework */,
+				461DB2B71AA06160000AACF4 /* FBAudienceNetwork.framework */,
+				461DB2B81AA06160000AACF4 /* FBAudienceNetwork.README.txt */,
+				461DB2B91AA06160000AACF4 /* LICENSE */,
+				461DB2BA1AA06160000AACF4 /* README.txt */,
+			);
+			path = FacebookSDK;
+			sourceTree = "<group>";
+		};
 		4663DF251A96B1B900DCE3EE /* parse-library */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +281,8 @@
 		46BADCFE1A929B6B0036587B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				461DB2B41AA06160000AACF4 /* FacebookSDK */,
+				461DB2B21AA060CC000AACF4 /* Accounts.framework */,
 				461DB2AF1AA05D1C000AACF4 /* AdSupport.framework */,
 				461DB2AD1AA05D00000AACF4 /* libstdc++.6.dylib */,
 				4663DF4B1A96B31500DCE3EE /* libsqlite3.dylib */,
@@ -347,6 +380,7 @@
 			knownRegions = (
 				en,
 				Base,
+				he,
 			);
 			mainGroup = 46044D9E1A8EA4B800F35CC7;
 			productRefGroup = 46044DA81A8EA4B800F35CC7 /* Products */;
@@ -364,10 +398,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461DB3D31AA06161000AACF4 /* FBAudienceNetwork.README.txt in Resources */,
 				46044DB21A8EA4B800F35CC7 /* Login.storyboard in Resources */,
 				466C771F1A97CCBE005B1457 /* Home.storyboard in Resources */,
+				461DB3D41AA06161000AACF4 /* LICENSE in Resources */,
 				465F92F71A96A02100BE0566 /* Adobe Jenson Pro.ttf in Resources */,
 				46044DB71A8EA4B800F35CC7 /* LaunchScreen.xib in Resources */,
+				461DB3D51AA06161000AACF4 /* README.txt in Resources */,
 				46044DB41A8EA4B800F35CC7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,6 +607,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/parse-library-1",
+					"$(PROJECT_DIR)/FacebookSDK",
 				);
 				INFOPLIST_FILE = "Lucid/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -578,6 +616,7 @@
 					"-framework",
 					"\"UIKit\"",
 					"-lstdc++",
+					"$(inherited)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Lucid/Lucid-Bridging-Header.h";
@@ -595,6 +634,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/parse-library-1",
+					"$(PROJECT_DIR)/FacebookSDK",
 				);
 				INFOPLIST_FILE = "Lucid/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -603,6 +643,7 @@
 					"-framework",
 					"\"UIKit\"",
 					"-lstdc++",
+					"$(inherited)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Lucid/Lucid-Bridging-Header.h";

@@ -152,8 +152,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="mustBeMaybellineButtonWasHit:" destination="Yhe-eb-mjI" eventType="touchUpInside" id="WdT-de-L6M"/>
-                                    <segue destination="8Cc-Mf-Gyf" kind="custom" customClass="RBStoryboardPushSegue" id="508-F2-d0t"/>
+                                    <segue destination="8Cc-Mf-Gyf" kind="custom" identifier="goToHome" customClass="RBStoryboardModalSegue" id="508-F2-d0t"/>
                                 </connections>
                             </button>
                         </subviews>
