@@ -61,19 +61,19 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yc1-qO-oiP">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yc1-qO-oiP">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="fIF-BU-RFd"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ni-O2-JmY">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ni-O2-JmY">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="kZG-wm-jfR"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="te9-ku-sIc">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="te9-ku-sIc">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="01S-M4-4tU"/>
@@ -151,6 +151,10 @@
                                 <state key="normal" title="Must be maybelline">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="mustBeMaybellineButtonWasHit:" destination="Yhe-eb-mjI" eventType="touchUpInside" id="WdT-de-L6M"/>
+                                    <segue destination="8Cc-Mf-Gyf" kind="custom" customClass="RBStoryboardPushSegue" id="508-F2-d0t"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -163,11 +167,33 @@
                     </view>
                     <connections>
                         <outlet property="mainTextLabel" destination="ydk-zu-LPm" id="t2o-u4-RFP"/>
+                        <outlet property="mustBeMaybellineButton" destination="R5f-NX-I91" id="vnK-Sz-g1X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWn-Zz-0rc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1693" y="1341"/>
+        </scene>
+        <!--Storyboard Link-->
+        <scene sceneID="TM0-qQ-54G">
+            <objects>
+                <viewController id="8Cc-Mf-Gyf" customClass="RBStoryboardLink" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B2D-Uj-fwe"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Ln-D0-cOu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pu3-tu-WnZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="storyboardName" value="Home"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nH3-GE-YgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693" y="2137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BYr-ij-2TZ">

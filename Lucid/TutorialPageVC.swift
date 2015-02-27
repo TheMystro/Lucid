@@ -11,15 +11,16 @@ import UIKit
 class TutorialPageVC: UIViewController {
     var pageIndex = Int()
     @IBOutlet weak var mainTextLabel: UILabel!
+    @IBOutlet weak var mustBeMaybellineButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         mainTextLabel.text = title
         
         if pageIndex == 3 {
-            
+            mustBeMaybellineButton.hidden = false
+        } else {
+            mustBeMaybellineButton.hidden = true
         }
     }
-    
-    
 }
