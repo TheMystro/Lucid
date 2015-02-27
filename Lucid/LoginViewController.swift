@@ -28,7 +28,8 @@ class LoginViewController: UIViewController {
         lucidLabel.orJenson()
         lucidLabel.kernBy(5)
         
-        nahLabel.orJenson()
+        nahLabel.orJenson(size: 14)
+        nahLabel.kernBy(1)
     }
     
     
