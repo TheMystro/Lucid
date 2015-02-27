@@ -146,9 +146,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5f-NX-I91">
+                                <rect key="frame" x="233" y="550" width="134" height="30"/>
+                                <state key="normal" title="Must be maybelline">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="kCQ-D6-n2F" firstAttribute="top" secondItem="R5f-NX-I91" secondAttribute="bottom" constant="20" id="JFY-0n-o1E"/>
+                            <constraint firstAttribute="centerX" secondItem="R5f-NX-I91" secondAttribute="centerX" id="dcF-zM-at7"/>
                             <constraint firstAttribute="centerX" secondItem="ydk-zu-LPm" secondAttribute="centerX" constant="-0.5" id="j1C-X2-dw4"/>
                             <constraint firstAttribute="centerY" secondItem="ydk-zu-LPm" secondAttribute="centerY" constant="0.5" id="pic-1Y-8zC"/>
                         </constraints>

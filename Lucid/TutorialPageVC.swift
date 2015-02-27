@@ -15,6 +15,10 @@ class TutorialPageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mainTextLabel.text = title
+        
+        if pageIndex == 3 {
+            
+        }
     }
     
     
