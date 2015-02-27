@@ -17,7 +17,6 @@
 		461DB2AC1AA055A8000AACF4 /* TutorialPageViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DB2AB1AA055A8000AACF4 /* TutorialPageViewControllerDataSource.swift */; };
 		461DB2AE1AA05D00000AACF4 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 461DB2AD1AA05D00000AACF4 /* libstdc++.6.dylib */; };
 		461DB2B31AA060CC000AACF4 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461DB2B21AA060CC000AACF4 /* Accounts.framework */; };
-		461DB3D01AA06161000AACF4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461DB2B51AA06160000AACF4 /* Bolts.framework */; };
 		461DB3D11AA06161000AACF4 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461DB2B61AA06160000AACF4 /* FacebookSDK.framework */; };
 		461DB3D21AA06161000AACF4 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461DB2B71AA06160000AACF4 /* FBAudienceNetwork.framework */; };
 		461DB3D31AA06161000AACF4 /* FBAudienceNetwork.README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 461DB2B81AA06160000AACF4 /* FBAudienceNetwork.README.txt */; };
@@ -26,7 +25,6 @@
 		465F92F71A96A02100BE0566 /* Adobe Jenson Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 465F92F61A96A01E00BE0566 /* Adobe Jenson Pro.ttf */; };
 		465F92F91A96A0F500BE0566 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F92F81A96A0F500BE0566 /* LoginViewController.swift */; };
 		4663DF241A96AFAC00DCE3EE /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4663DF231A96AFAC00DCE3EE /* UILabelExtension.swift */; };
-		4663DF2B1A96B1B900DCE3EE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4663DF261A96B1B900DCE3EE /* Bolts.framework */; };
 		4663DF2C1A96B1B900DCE3EE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4663DF271A96B1B900DCE3EE /* Parse.framework */; };
 		4663DF2D1A96B1B900DCE3EE /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4663DF281A96B1B900DCE3EE /* ParseCrashReporting.framework */; };
 		4663DF2E1A96B1B900DCE3EE /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4663DF291A96B1B900DCE3EE /* ParseFacebookUtils.framework */; };
@@ -76,7 +74,6 @@
 		461DB2AD1AA05D00000AACF4 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		461DB2AF1AA05D1C000AACF4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		461DB2B21AA060CC000AACF4 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
-		461DB2B51AA06160000AACF4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		461DB2B61AA06160000AACF4 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		461DB2B71AA06160000AACF4 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
 		461DB2B81AA06160000AACF4 /* FBAudienceNetwork.README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FBAudienceNetwork.README.txt; sourceTree = "<group>"; };
@@ -85,7 +82,6 @@
 		465F92F61A96A01E00BE0566 /* Adobe Jenson Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adobe Jenson Pro.ttf"; sourceTree = "<group>"; };
 		465F92F81A96A0F500BE0566 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4663DF231A96AFAC00DCE3EE /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
-		4663DF261A96B1B900DCE3EE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		4663DF271A96B1B900DCE3EE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		4663DF281A96B1B900DCE3EE /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		4663DF291A96B1B900DCE3EE /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
@@ -130,14 +126,12 @@
 				4663DF461A96B30700DCE3EE /* Social.framework in Frameworks */,
 				461DB3D11AA06161000AACF4 /* FacebookSDK.framework in Frameworks */,
 				4663DF481A96B30700DCE3EE /* SystemConfiguration.framework in Frameworks */,
-				4663DF2B1A96B1B900DCE3EE /* Bolts.framework in Frameworks */,
 				461DB3D21AA06161000AACF4 /* FBAudienceNetwork.framework in Frameworks */,
 				4663DF2D1A96B1B900DCE3EE /* ParseCrashReporting.framework in Frameworks */,
 				4663DF2F1A96B1B900DCE3EE /* ParseUI.framework in Frameworks */,
 				4663DF2E1A96B1B900DCE3EE /* ParseFacebookUtils.framework in Frameworks */,
 				467935671A91AD5A00ACC83B /* Crashlytics.framework in Frameworks */,
 				4663DF2C1A96B1B900DCE3EE /* Parse.framework in Frameworks */,
-				461DB3D01AA06161000AACF4 /* Bolts.framework in Frameworks */,
 				467935681A91AD5A00ACC83B /* Fabric.framework in Frameworks */,
 				49BF44BBB11B047CCE3856F5 /* libPods.a in Frameworks */,
 			);
@@ -229,7 +223,6 @@
 		461DB2B41AA06160000AACF4 /* FacebookSDK */ = {
 			isa = PBXGroup;
 			children = (
-				461DB2B51AA06160000AACF4 /* Bolts.framework */,
 				461DB2B61AA06160000AACF4 /* FacebookSDK.framework */,
 				461DB2B71AA06160000AACF4 /* FBAudienceNetwork.framework */,
 				461DB2B81AA06160000AACF4 /* FBAudienceNetwork.README.txt */,
@@ -242,7 +235,6 @@
 		4663DF251A96B1B900DCE3EE /* parse-library */ = {
 			isa = PBXGroup;
 			children = (
-				4663DF261A96B1B900DCE3EE /* Bolts.framework */,
 				4663DF271A96B1B900DCE3EE /* Parse.framework */,
 				4663DF281A96B1B900DCE3EE /* ParseCrashReporting.framework */,
 				4663DF291A96B1B900DCE3EE /* ParseFacebookUtils.framework */,
