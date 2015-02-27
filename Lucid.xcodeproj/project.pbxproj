@@ -86,7 +86,7 @@
 		4663DF281A96B1B900DCE3EE /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		4663DF291A96B1B900DCE3EE /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		4663DF2A1A96B1B900DCE3EE /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
-		4663DF301A96B23600DCE3EE /* Lucid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lucid-Bridging-Header.h"; sourceTree = "<group>"; };
+		4663DF301A96B23600DCE3EE /* Lucid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Lucid-Bridging-Header.h"; path = "../Lucid-Bridging-Header.h"; sourceTree = "<group>"; };
 		4663DF351A96B30700DCE3EE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4663DF361A96B30700DCE3EE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		4663DF371A96B30700DCE3EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -174,11 +174,9 @@
 			children = (
 				46044DAC1A8EA4B800F35CC7 /* AppDelegate.swift */,
 				461DB2A61AA052D9000AACF4 /* Login */,
-				466C771E1A97CCBE005B1457 /* Home.storyboard */,
+				461DB4921AA064D8000AACF4 /* Home */,
 				46044DB31A8EA4B800F35CC7 /* Images.xcassets */,
-				46044DB51A8EA4B800F35CC7 /* LaunchScreen.xib */,
 				46044DAA1A8EA4B800F35CC7 /* Supporting Files */,
-				4663DF301A96B23600DCE3EE /* Lucid-Bridging-Header.h */,
 			);
 			path = Lucid;
 			sourceTree = "<group>";
@@ -186,6 +184,8 @@
 		46044DAA1A8EA4B800F35CC7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4663DF301A96B23600DCE3EE /* Lucid-Bridging-Header.h */,
+				46044DB51A8EA4B800F35CC7 /* LaunchScreen.xib */,
 				46044DAB1A8EA4B800F35CC7 /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -230,6 +230,14 @@
 				461DB2BA1AA06160000AACF4 /* README.txt */,
 			);
 			path = FacebookSDK;
+			sourceTree = "<group>";
+		};
+		461DB4921AA064D8000AACF4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				466C771E1A97CCBE005B1457 /* Home.storyboard */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 		4663DF251A96B1B900DCE3EE /* parse-library */ = {
@@ -506,7 +514,7 @@
 				46044DB61A8EA4B800F35CC7 /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = .;
+			path = ../.;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
