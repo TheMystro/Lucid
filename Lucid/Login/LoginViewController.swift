@@ -44,6 +44,17 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginWithFacebookWasHit(sender: AnyObject) {
-        performSegueWithIdentifier("segueToTutorial", sender: self)
+        PFFacebookUtils.logInWithPermissions(["public_profile", "user_friends", "email"], {
+            (user: PFUser!, error: NSError!) -> Void in
+            if user == nil {
+                NSLog("Uh oh. The user cancelled the Facebook login.")
+            } else if user.isNew {
+                NSLog("User signed up and logged in through Facebook!")
+                self.performSegueWithIdentifier("segueToTutorial", sender: self)
+            } else {
+                NSLog("User logged in through Facebook!")
+                self.performSegueWithIdentifier("segueToTutorial", sender: self)
+            }
+        })
     }
 }

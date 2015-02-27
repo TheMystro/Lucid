@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.enableLocalDatastore()
         Parse.setApplicationId("HdxN3Vt0JIGNCDDQs2hTB92k9Yu8JnKRJHUnJnr1", clientKey: "FBkOu8pIBWInYTQZs0gEA1vkVy2nboMbkaPIWX2f")
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
+        PFFacebookUtils.initializeFacebook()
         
         let loggedIn = PFUser.currentUser() != nil
         let storyboard = loggedIn ? "Home" : "Login"
@@ -30,8 +31,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = (UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController)
         window?.makeKeyAndVisible()
         
-        
         return true
+    }
+
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        return FBAppCall.handleOpenURL(url, sourceApplication:sourceApplication, withSession:PFFacebookUtils.session())
+    }
+ 
+    func applicationDidBecomeActive(application: UIApplication) {
+        FBAppCall.handleDidBecomeActiveWithSession(PFFacebookUtils.session())
     }
 }
 
