@@ -22,13 +22,13 @@
 		461DB3D31AA06161000AACF4 /* FBAudienceNetwork.README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 461DB2B81AA06160000AACF4 /* FBAudienceNetwork.README.txt */; };
 		461DB3D41AA06161000AACF4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 461DB2B91AA06160000AACF4 /* LICENSE */; };
 		461DB3D51AA06161000AACF4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 461DB2BA1AA06160000AACF4 /* README.txt */; };
-		461DD99B1AA1B9EE00365C3E /* SettingsTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DD99A1AA1B9EE00365C3E /* SettingsTableViewDelegate.swift */; };
 		461DD9A11AA1BD6D00365C3E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DD9A01AA1BD6D00365C3E /* SettingsViewController.swift */; };
 		461DD9A31AA1C1BD00365C3E /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DD9A21AA1C1BD00365C3E /* HomeTabBarController.swift */; };
 		461DD9A61AA1C9DB00365C3E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461DD9A51AA1C9DB00365C3E /* Settings.storyboard */; };
 		461DD9B21AA1E19600365C3E /* UIRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DD9B01AA1E19600365C3E /* UIRoundedButton.swift */; };
 		461DD9B31AA1E19600365C3E /* UIRoundedButtonWhite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DD9B11AA1E19600365C3E /* UIRoundedButtonWhite.swift */; };
 		461DD9B61AA1E1A700365C3E /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DD9B51AA1E1A700365C3E /* UIColorExtensions.swift */; };
+		461DD9BA1AA1E62000365C3E /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DD9B91AA1E62000365C3E /* FunctionViewController.swift */; };
 		465F92F71A96A02100BE0566 /* Adobe Jenson Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 465F92F61A96A01E00BE0566 /* Adobe Jenson Pro.ttf */; };
 		465F92F91A96A0F500BE0566 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F92F81A96A0F500BE0566 /* LoginViewController.swift */; };
 		4663DF241A96AFAC00DCE3EE /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4663DF231A96AFAC00DCE3EE /* UILabelExtension.swift */; };
@@ -86,7 +86,6 @@
 		461DB2B81AA06160000AACF4 /* FBAudienceNetwork.README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FBAudienceNetwork.README.txt; sourceTree = "<group>"; };
 		461DB2B91AA06160000AACF4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		461DB2BA1AA06160000AACF4 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		461DD99A1AA1B9EE00365C3E /* SettingsTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewDelegate.swift; sourceTree = "<group>"; };
 		461DD9A01AA1BD6D00365C3E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		461DD9A21AA1C1BD00365C3E /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		461DD9A51AA1C9DB00365C3E /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
@@ -101,6 +100,7 @@
 		461DD9B01AA1E19600365C3E /* UIRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRoundedButton.swift; sourceTree = "<group>"; };
 		461DD9B11AA1E19600365C3E /* UIRoundedButtonWhite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRoundedButtonWhite.swift; sourceTree = "<group>"; };
 		461DD9B51AA1E1A700365C3E /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		461DD9B91AA1E62000365C3E /* FunctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
 		465F92F61A96A01E00BE0566 /* Adobe Jenson Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adobe Jenson Pro.ttf"; sourceTree = "<group>"; };
 		465F92F81A96A0F500BE0566 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4663DF231A96AFAC00DCE3EE /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
@@ -275,8 +275,8 @@
 		461DD9A41AA1C33800365C3E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				461DD99A1AA1B9EE00365C3E /* SettingsTableViewDelegate.swift */,
 				461DD9A51AA1C9DB00365C3E /* Settings.storyboard */,
+				461DD9B91AA1E62000365C3E /* FunctionViewController.swift */,
 				461DD9A01AA1BD6D00365C3E /* SettingsViewController.swift */,
 			);
 			name = Settings;
@@ -543,13 +543,13 @@
 				461DD9B31AA1E19600365C3E /* UIRoundedButtonWhite.swift in Sources */,
 				461DD9B61AA1E1A700365C3E /* UIColorExtensions.swift in Sources */,
 				461DB2AC1AA055A8000AACF4 /* TutorialPageViewControllerDataSource.swift in Sources */,
+				461DD9BA1AA1E62000365C3E /* FunctionViewController.swift in Sources */,
 				4663DF241A96AFAC00DCE3EE /* UILabelExtension.swift in Sources */,
 				465F92F91A96A0F500BE0566 /* LoginViewController.swift in Sources */,
 				461DD9A31AA1C1BD00365C3E /* HomeTabBarController.swift in Sources */,
 				46044DAD1A8EA4B800F35CC7 /* AppDelegate.swift in Sources */,
 				461DD9B21AA1E19600365C3E /* UIRoundedButton.swift in Sources */,
 				461DB2A81AA0532E000AACF4 /* TutorialPagesViewController.swift in Sources */,
-				461DD99B1AA1B9EE00365C3E /* SettingsTableViewDelegate.swift in Sources */,
 				461DB2AA1AA053A0000AACF4 /* TutorialPageVC.swift in Sources */,
 				461DD9A11AA1BD6D00365C3E /* SettingsViewController.swift in Sources */,
 			);
