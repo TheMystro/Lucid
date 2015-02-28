@@ -51,6 +51,7 @@
 		466C771F1A97CCBE005B1457 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466C771E1A97CCBE005B1457 /* Home.storyboard */; };
 		467935671A91AD5A00ACC83B /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467935651A91AD5A00ACC83B /* Crashlytics.framework */; };
 		467935681A91AD5A00ACC83B /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467935661A91AD5A00ACC83B /* Fabric.framework */; };
+		46F812E11AA272650036F887 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F812E01AA272650036F887 /* JournalViewController.swift */; };
 		49BF44BBB11B047CCE3856F5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3BA289AD821D2DB400BFC5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +126,7 @@
 		466C771E1A97CCBE005B1457 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		467935651A91AD5A00ACC83B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		467935661A91AD5A00ACC83B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		46F812E01AA272650036F887 /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		5A3BA289AD821D2DB400BFC5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D7B010FDBB49129BAB8E52 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -257,6 +259,7 @@
 			children = (
 				466C771E1A97CCBE005B1457 /* Home.storyboard */,
 				461DD9A21AA1C1BD00365C3E /* HomeTabBarController.swift */,
+				46F812E01AA272650036F887 /* JournalViewController.swift */,
 				461DD9A41AA1C33800365C3E /* Settings */,
 			);
 			path = Home;
@@ -545,6 +548,7 @@
 				461DB2AC1AA055A8000AACF4 /* TutorialPageViewControllerDataSource.swift in Sources */,
 				461DD9BA1AA1E62000365C3E /* FunctionViewController.swift in Sources */,
 				4663DF241A96AFAC00DCE3EE /* UILabelExtension.swift in Sources */,
+				46F812E11AA272650036F887 /* JournalViewController.swift in Sources */,
 				465F92F91A96A0F500BE0566 /* LoginViewController.swift in Sources */,
 				461DD9A31AA1C1BD00365C3E /* HomeTabBarController.swift in Sources */,
 				46044DAD1A8EA4B800F35CC7 /* AppDelegate.swift in Sources */,

@@ -12,5 +12,6 @@ class HomeTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         tabBar.tintColor = UIColor.whiteColor()
+        tabBar.frame.size.height += 60
     }
 }

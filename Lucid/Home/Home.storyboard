@@ -9,13 +9,20 @@
         <mutableArray key="Adobe Jenson Pro.ttf">
             <string>AJensonPro-Regular</string>
             <string>AJensonPro-Regular</string>
+            <string>AJensonPro-Regular</string>
+            <string>AJensonPro-Regular</string>
+            <string>AJensonPro-Regular</string>
+            <string>AJensonPro-Regular</string>
+            <string>AJensonPro-Regular</string>
+            <string>AJensonPro-Regular</string>
+            <string>AJensonPro-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
         <!--Journal-->
         <scene sceneID="d6M-Fk-2oE">
             <objects>
-                <viewController id="Gye-xr-0eG" sceneMemberID="viewController">
+                <viewController id="Gye-xr-0eG" customClass="JournalViewController" customModule="Lucid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0Fp-Fv-kss"/>
                         <viewControllerLayoutGuide type="bottom" id="C3h-L1-5em"/>
@@ -24,20 +31,106 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nah" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3b-q4-bQS">
-                                <rect key="frame" x="32" y="154" width="32" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pretty-things" translatesAutoresizingMaskIntoConstraints="NO" id="brU-NV-Duo">
+                                <rect key="frame" x="266" y="64" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="brU-NV-Duo" secondAttribute="height" multiplier="1:1" id="AiU-9K-Bxj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDa-J9-sZv">
+                                <rect key="frame" x="283" y="71" width="35" height="20"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fP-ov-iVM">
+                                <rect key="frame" x="291" y="97" width="20" height="20"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="822-if-g0k">
+                                <rect key="frame" x="280" y="125" width="40" height="20"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="entry" translatesAutoresizingMaskIntoConstraints="NO" id="pFD-wl-4Is">
+                                <rect key="frame" x="60" y="234" width="480" height="40"/>
+                                <color key="backgroundColor" red="0.94488918781280518" green="0.94541853666305542" blue="0.94875842332839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jdE-be-FZO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5DU-wH-9Cv">
+                                <rect key="frame" x="60" y="285" width="480" height="30"/>
+                                <color key="backgroundColor" red="0.94488918781280518" green="0.94541853666305542" blue="0.94875842332839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="e58-B6-f1D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="stats" translatesAutoresizingMaskIntoConstraints="NO" id="sk5-jG-yiO">
+                                <rect key="frame" x="60" y="326" width="480" height="50"/>
+                                <color key="backgroundColor" red="0.94488918781280518" green="0.94541853666305542" blue="0.94875842332839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WjS-h3-EJD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CNF-Er-HaF">
+                                <rect key="frame" x="60" y="193" width="480" height="30"/>
+                                <color key="backgroundColor" red="0.94488918781280518" green="0.94541853666305542" blue="0.94875842332839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MGQ-1Z-MM7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pFD-wl-4Is" firstAttribute="top" secondItem="CNF-Er-HaF" secondAttribute="bottom" constant="11" id="0mu-j2-M3Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pFD-wl-4Is" secondAttribute="trailing" constant="44" id="3cz-F4-7oE"/>
+                            <constraint firstItem="5DU-wH-9Cv" firstAttribute="top" secondItem="pFD-wl-4Is" secondAttribute="bottom" constant="11" id="CHv-lR-lta"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sk5-jG-yiO" secondAttribute="trailing" constant="44" id="RGq-mi-LBG"/>
+                            <constraint firstItem="822-if-g0k" firstAttribute="top" secondItem="9fP-ov-iVM" secondAttribute="bottom" constant="8" id="X9a-wf-TfN"/>
+                            <constraint firstItem="CNF-Er-HaF" firstAttribute="top" secondItem="brU-NV-Duo" secondAttribute="bottom" constant="44" id="bEy-Kq-pR0"/>
+                            <constraint firstItem="brU-NV-Duo" firstAttribute="top" secondItem="0Fp-Fv-kss" secondAttribute="bottom" constant="44" id="ch0-fq-RgJ"/>
+                            <constraint firstAttribute="centerX" secondItem="HDa-J9-sZv" secondAttribute="centerX" id="cnK-12-gZ4"/>
+                            <constraint firstItem="CNF-Er-HaF" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="44" id="czA-nM-yyO"/>
+                            <constraint firstItem="9fP-ov-iVM" firstAttribute="centerY" secondItem="brU-NV-Duo" secondAttribute="centerY" id="fhV-lt-EuK"/>
+                            <constraint firstAttribute="centerX" secondItem="822-if-g0k" secondAttribute="centerX" id="g5V-yO-jMf"/>
+                            <constraint firstAttribute="centerX" secondItem="brU-NV-Duo" secondAttribute="centerX" id="gtE-ZY-Hzo"/>
+                            <constraint firstItem="sk5-jG-yiO" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="44" id="iHH-MD-Ltt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5DU-wH-9Cv" secondAttribute="trailing" constant="44" id="kTd-8j-VlY"/>
+                            <constraint firstItem="9fP-ov-iVM" firstAttribute="top" secondItem="HDa-J9-sZv" secondAttribute="bottom" constant="6" id="maI-ov-ezV"/>
+                            <constraint firstItem="5DU-wH-9Cv" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="44" id="nW9-2q-BhQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CNF-Er-HaF" secondAttribute="trailing" constant="44" id="nWD-jk-ajC"/>
+                            <constraint firstItem="sk5-jG-yiO" firstAttribute="top" secondItem="5DU-wH-9Cv" secondAttribute="bottom" constant="11" id="nyx-Da-D0X"/>
+                            <constraint firstItem="C3h-L1-5em" firstAttribute="top" secondItem="sk5-jG-yiO" secondAttribute="bottom" constant="175" id="r1S-Oe-lil"/>
+                            <constraint firstItem="pFD-wl-4Is" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="44" id="s58-zc-R71"/>
+                            <constraint firstAttribute="centerX" secondItem="9fP-ov-iVM" secondAttribute="centerX" id="toR-0a-0Ch"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Journal" image="journal" id="eL1-iF-lcD"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="9fP-ov-iVM" id="Aeh-8U-ebV"/>
+                        <outlet property="entryTextView" destination="pFD-wl-4Is" id="M7r-RP-2Ah"/>
+                        <outlet property="methodsTextField" destination="5DU-wH-9Cv" id="ioL-QW-ij7"/>
+                        <outlet property="monthLabel" destination="HDa-J9-sZv" id="g4P-SC-z2H"/>
+                        <outlet property="statsTextView" destination="sk5-jG-yiO" id="xDd-Du-JUL"/>
+                        <outlet property="titleTextField" destination="CNF-Er-HaF" id="2OV-Dm-wgV"/>
+                        <outlet property="yearLabel" destination="822-if-g0k" id="5Zs-rU-jjT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8X-zN-qXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="654" y="-331"/>
+            <point key="canvasLocation" x="834" y="-194"/>
         </scene>
         <!--Home-->
         <scene sceneID="vcQ-sF-ryQ">
@@ -230,7 +323,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v5Q-Rh-M55">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5Q-Rh-M55">
                                 <rect key="frame" x="231" y="243" width="140" height="2"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -238,19 +331,19 @@
                                     <constraint firstAttribute="width" constant="140" id="lXu-1t-f8U"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69w-FG-tON">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69w-FG-tON">
                                 <rect key="frame" x="279" y="265" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uz5-rt-Jx8" customClass="UIRoundedButtonWhite" customModule="Lucid" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uz5-rt-Jx8" customClass="UIRoundedButtonWhite" customModule="Lucid" customModuleProvider="target">
                                 <rect key="frame" x="277" y="374" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wzr-5g-O36">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzr-5g-O36">
                                 <rect key="frame" x="237" y="301" width="140" height="2"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -258,21 +351,21 @@
                                     <constraint firstAttribute="width" constant="140" id="HiU-jO-x0o"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nyo-bN-Kih">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nyo-bN-Kih">
                                 <rect key="frame" x="237" y="325" width="140" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="gK0-ww-JBn"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-L1-l1g">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-L1-l1g">
                                 <rect key="frame" x="237" y="193" width="140" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="Pkd-xU-jUJ"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bph-PD-WkY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bph-PD-WkY">
                                 <rect key="frame" x="16" y="451" width="568" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -316,6 +409,7 @@
         <image name="home" width="19" height="27"/>
         <image name="journal" width="26" height="24"/>
         <image name="methods" width="28" height="24"/>
+        <image name="pretty-things" width="463" height="463"/>
         <image name="setting" width="28" height="29"/>
     </resources>
 </document>
