@@ -185,7 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				4663DF301A96B23600DCE3EE /* Lucid-Bridging-Header.h */,
-				46044DB51A8EA4B800F35CC7 /* LaunchScreen.xib */,
+				4620B1461AA1B3BC00C6F157 /* LaunchScreen */,
 				46044DAB1A8EA4B800F35CC7 /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -246,6 +246,14 @@
 				461DB2A91AA053A0000AACF4 /* TutorialPageVC.swift */,
 			);
 			name = Tutorial;
+			sourceTree = "<group>";
+		};
+		4620B1461AA1B3BC00C6F157 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				46044DB51A8EA4B800F35CC7 /* LaunchScreen.xib */,
+			);
+			name = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		4663DF251A96B1B900DCE3EE /* parse-library */ = {
