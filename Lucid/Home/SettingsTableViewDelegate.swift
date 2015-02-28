@@ -29,7 +29,8 @@ class SettingsTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDataS
         case 0:
             switch indexPath.row {
             case 0:
-                cell.textLabel?.text = "Settings"
+                println("d")
+                cell.textLabel?.text = "SETTINGS"
             case 1:
                 cell.textLabel?.text = "Sound"
                 cell.detailTextLabel?.text = "Gymnopedie"
@@ -47,7 +48,7 @@ class SettingsTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDataS
         case 1:
             switch indexPath.row {
             case 0:
-                cell.textLabel?.text = "Methods"
+                cell.textLabel?.text = "METHODS"
             case 1:
                 cell.textLabel?.text = "Reality Check"
                 cell.detailTextLabel?.text = "On"
@@ -60,7 +61,7 @@ class SettingsTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDataS
         case 2:
             switch indexPath.row {
             case 0:
-                cell.textLabel?.text = "Dream Journal"
+                cell.textLabel?.text = "DREAM JOURNAL"
             case 1:
                 cell.textLabel?.text = "Pattern Tracker"
                 cell.detailTextLabel?.text = "On"
