@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDataSource {
+class SettingsTableViewDelegate: UITableView, UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: UITableViewCell
         
@@ -77,10 +77,8 @@ class SettingsTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDataS
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.section == 0 {
-            tableView.deselectRowAtIndexPath(indexPath, animated: false)
-        } else {
-            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        if indexPath.section == 1 {
+            self
         }
     }
     

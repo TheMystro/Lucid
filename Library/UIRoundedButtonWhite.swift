@@ -10,11 +10,7 @@
 class UIRoundedButtonWhite: UIRoundedButton {
 	
 	override func setFrameCircle() {
-		//super.setFrameCircle()
-		
-        
-        self.layer.cornerRadius = 8
-        self.clipsToBounds = true
+		super.setFrameCircle()
         
 		self.layer.borderWidth = 2
 		self.layer.borderColor = UIColor.fromRGB(0, green: 160, blue: 255).CGColor

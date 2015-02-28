@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -18,4 +18,6 @@ class SettingsViewController: UIViewController {
         tableView.delegate = dS
         tableView.dataSource = dS
     }
+    
+    
 }

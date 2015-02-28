@@ -170,7 +170,7 @@
                     <tabBarItem key="tabBarItem" title="Settings" image="setting" id="hCC-LW-N9d"/>
                     <connections>
                         <outlet property="tableView" destination="fLO-tY-kPf" id="UOf-n9-FdG"/>
-                        <segue destination="ZNS-sw-KUX" kind="custom" customClass="RBStoryboardPushSegue" id="lus-ju-7hY"/>
+                        <segue destination="ZNS-sw-KUX" kind="custom" identifier="goToFunctions" customClass="RBStoryboardPushSegue" id="lus-ju-7hY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AG8-NX-wAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
