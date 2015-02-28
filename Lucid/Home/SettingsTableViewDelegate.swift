@@ -92,7 +92,7 @@ class SettingsTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDataS
         switch section {
         case 0: return 5
         case 1: return 4
-        case 2: return 3
+        case 2: return 2
         default: fatalError("motherfuck")
         }
     }

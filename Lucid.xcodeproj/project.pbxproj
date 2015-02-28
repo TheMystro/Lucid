@@ -87,6 +87,14 @@
 		461DD9A01AA1BD6D00365C3E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		461DD9A21AA1C1BD00365C3E /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		461DD9A51AA1C9DB00365C3E /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		461DD9A71AA1DE5400365C3E /* CronosPro-Subh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CronosPro-Subh.otf"; sourceTree = "<group>"; };
+		461DD9A81AA1DE5B00365C3E /* CronosPro-BoldSubh.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CronosPro-BoldSubh.otf"; sourceTree = "<group>"; };
+		461DD9AA1AA1DE7400365C3E /* CronosPro-BoldCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CronosPro-BoldCapt.otf"; sourceTree = "<group>"; };
+		461DD9AB1AA1DE8200365C3E /* CronosPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CronosPro-Bold.otf"; sourceTree = "<group>"; };
+		461DD9AC1AA1DE8B00365C3E /* CronosPro-LtCapt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CronosPro-LtCapt.otf"; sourceTree = "<group>"; };
+		461DD9AD1AA1DE9A00365C3E /* CronosPro-SubhIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CronosPro-SubhIt.otf"; sourceTree = "<group>"; };
+		461DD9AE1AA1DEA100365C3E /* CronosPro-SemiboldSubhIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CronosPro-SemiboldSubhIt.otf"; sourceTree = "<group>"; };
+		461DD9AF1AA1DEA800365C3E /* CronosPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CronosPro-Regular.otf"; sourceTree = "<group>"; };
 		465F92F61A96A01E00BE0566 /* Adobe Jenson Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adobe Jenson Pro.ttf"; sourceTree = "<group>"; };
 		465F92F81A96A0F500BE0566 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4663DF231A96AFAC00DCE3EE /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
@@ -158,10 +166,10 @@
 		46044D9E1A8EA4B800F35CC7 = {
 			isa = PBXGroup;
 			children = (
-				4663DF341A96B2B800DCE3EE /* Resources */,
 				4663DF501A96B78A00DCE3EE /* Library */,
 				46044DA91A8EA4B800F35CC7 /* Lucid */,
 				46BADCFE1A929B6B0036587B /* Frameworks */,
+				4663DF341A96B2B800DCE3EE /* Resources */,
 				46044DBF1A8EA4B800F35CC7 /* LucidTests */,
 				46044DA81A8EA4B800F35CC7 /* Products */,
 				9E22D1F652D85204984D3EB7 /* Pods */,
@@ -292,6 +300,14 @@
 			isa = PBXGroup;
 			children = (
 				465F92F61A96A01E00BE0566 /* Adobe Jenson Pro.ttf */,
+				461DD9A71AA1DE5400365C3E /* CronosPro-Subh.otf */,
+				461DD9A81AA1DE5B00365C3E /* CronosPro-BoldSubh.otf */,
+				461DD9AA1AA1DE7400365C3E /* CronosPro-BoldCapt.otf */,
+				461DD9AB1AA1DE8200365C3E /* CronosPro-Bold.otf */,
+				461DD9AC1AA1DE8B00365C3E /* CronosPro-LtCapt.otf */,
+				461DD9AD1AA1DE9A00365C3E /* CronosPro-SubhIt.otf */,
+				461DD9AE1AA1DEA100365C3E /* CronosPro-SemiboldSubhIt.otf */,
+				461DD9AF1AA1DEA800365C3E /* CronosPro-Regular.otf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

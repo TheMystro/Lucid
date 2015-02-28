@@ -52,6 +52,14 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Adobe Jenson Pro.ttf</string>
+		<string>CronosPro-Subh.otf</string>
+		<string>CronosPro-BoldSubh.otf</string>
+		<string>CronosPro-BoldCapt.otf</string>
+		<string>CronosPro-Bold.otf</string>
+		<string>CronosPro-LtCapt.otf</string>
+		<string>CronosPro-SubhIt.otf</string>
+		<string>CronosPro-SemiboldSubhIt.otf</string>
+		<string>CronosPro-Regular.otf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
