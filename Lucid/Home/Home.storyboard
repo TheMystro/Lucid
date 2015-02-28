@@ -59,16 +59,17 @@
             </objects>
             <point key="canvasLocation" x="654" y="-1205"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home Tab Bar Controller-->
         <scene sceneID="OlG-BZ-ktd">
             <objects>
-                <tabBarController id="395-s8-VOn" sceneMemberID="viewController">
+                <tabBarController id="395-s8-VOn" customClass="HomeTabBarController" customModule="Lucid" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="TaN-Td-hrG"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="9zn-ri-w9W">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="SN3-2Q-TSv" kind="relationship" relationship="viewControllers" id="Vsv-ed-zm7"/>
