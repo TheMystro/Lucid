@@ -10,6 +10,8 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    
+    
     let dS = SettingsTableViewDelegate()
     
     override func viewDidLoad() {
