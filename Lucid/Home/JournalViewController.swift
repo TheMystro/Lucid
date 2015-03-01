@@ -17,18 +17,30 @@ class JournalViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var entryTextView: UITextView!
 
+    @IBOutlet weak var backButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addTextDismiss()
         
-        for i in [titleTextField] {
-            let spacerView = UIView(frame: CGRectMake(0, 0, 10, 10))
-            i.leftViewMode = .Always
-            i.leftView = spacerView
-        }
+        let spacerView = UIView(frame: CGRectMake(0, 0, 10, 10))
+        titleTextField.leftViewMode = .Always
+        titleTextField.leftView = spacerView
+        
+        let v = UIView(frame: CGRectMake(0, 0, 80, view.frame.size.height))
+        let gestureRecog = UISwipeGestureRecognizer(target: self, action: "swipeBack:")
+        gestureRecog.direction = .Right
+        
+        v.addGestureRecognizer(gestureRecog)
+        view.addSubview(v)
+        
+        view.bringSubviewToFront(backButton)
     }
     
+    func swipeBack(gesture: UIGestureRecognizer) {
+        navigationController?.popViewControllerAnimated(true)
+    }
+
     @IBAction func submitButtonWasHit(sender: AnyObject) {
         view.frame = CGRectMake(0, 0, view.frame.width, view.frame.height)
         
@@ -39,6 +51,9 @@ class JournalViewController: UIViewController {
         view.frame = CGRectMake(0, -40, view.frame.width, view.frame.height)
         
         super.viewWillAppear(true)
+    }
+    @IBAction func backButtonWasHit(sender: AnyObject) {
+        navigationController?.popViewControllerAnimated(true)
     }
     /*
     // MARK: - Navigation

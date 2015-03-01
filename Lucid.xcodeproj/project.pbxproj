@@ -51,6 +51,8 @@
 		467935671A91AD5A00ACC83B /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467935651A91AD5A00ACC83B /* Crashlytics.framework */; };
 		467935681A91AD5A00ACC83B /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467935661A91AD5A00ACC83B /* Fabric.framework */; };
 		46F812E11AA272650036F887 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F812E01AA272650036F887 /* JournalViewController.swift */; };
+		46F8DB4F1AA3087F001431A4 /* JournalPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F8DB4E1AA3087F001431A4 /* JournalPickerViewController.swift */; };
+		46F8DB511AA30999001431A4 /* SeeJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F8DB501AA30999001431A4 /* SeeJournalViewController.swift */; };
 		49BF44BBB11B047CCE3856F5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3BA289AD821D2DB400BFC5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +127,8 @@
 		467935651A91AD5A00ACC83B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		467935661A91AD5A00ACC83B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		46F812E01AA272650036F887 /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		46F8DB4E1AA3087F001431A4 /* JournalPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalPickerViewController.swift; sourceTree = "<group>"; };
+		46F8DB501AA30999001431A4 /* SeeJournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeJournalViewController.swift; sourceTree = "<group>"; };
 		5A3BA289AD821D2DB400BFC5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D7B010FDBB49129BAB8E52 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -257,7 +261,9 @@
 			children = (
 				466C771E1A97CCBE005B1457 /* Home.storyboard */,
 				461DD9A21AA1C1BD00365C3E /* HomeTabBarController.swift */,
+				46F8DB4E1AA3087F001431A4 /* JournalPickerViewController.swift */,
 				46F812E01AA272650036F887 /* JournalViewController.swift */,
+				46F8DB501AA30999001431A4 /* SeeJournalViewController.swift */,
 				461DD9A41AA1C33800365C3E /* Settings */,
 			);
 			path = Home;
@@ -539,6 +545,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F8DB511AA30999001431A4 /* SeeJournalViewController.swift in Sources */,
 				4663DF4E1A96B5B700DCE3EE /* UIViewControllerExtension.swift in Sources */,
 				461DD9B31AA1E19600365C3E /* UIRoundedButtonWhite.swift in Sources */,
 				461DD9B61AA1E1A700365C3E /* UIColorExtensions.swift in Sources */,
@@ -553,6 +560,7 @@
 				461DB2A81AA0532E000AACF4 /* TutorialPagesViewController.swift in Sources */,
 				461DB2AA1AA053A0000AACF4 /* TutorialPageVC.swift in Sources */,
 				461DD9A11AA1BD6D00365C3E /* SettingsViewController.swift in Sources */,
+				46F8DB4F1AA3087F001431A4 /* JournalPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

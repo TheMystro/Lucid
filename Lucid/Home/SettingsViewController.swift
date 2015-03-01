@@ -107,7 +107,11 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         default: fatalError("motherfuck")
         }
     }
+    @IBAction func logOutButtonWasHit(sender: AnyObject) {
+        PFUser.logOut()
+        performSegueWithIdentifier("logOut", sender: self)
+    }
     
-    @IBAction func unwindToSettings(segue:UIStoryboardSegue){}
+    @IBAction func unwindToSettings(segue: UIStoryboardSegue){}
     
 }

@@ -39,18 +39,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q07-QX-aZk">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q07-QX-aZk">
                                 <rect key="frame" x="266" y="145" width="69" height="27"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="15"/>
                                 <state key="normal" title="JOURNAL">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="U3Y-Ov-0oa" kind="showDetail" id="1bI-gP-coT"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tk-2I-VVv">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tk-2I-VVv">
                                 <rect key="frame" x="248" y="297" width="106" height="27"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="15"/>
                                 <state key="normal" title="ADD JOURNAL">
@@ -58,10 +55,10 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Gye-xr-0eG" kind="showDetail" id="mTl-2k-cXr"/>
+                                    <segue destination="Gye-xr-0eG" kind="show" id="mTl-2k-cXr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXv-nK-XAt">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXv-nK-XAt">
                                 <rect key="frame" x="257" y="448" width="87" height="27"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="15"/>
                                 <state key="normal" title="STATISTICS">
@@ -116,10 +113,11 @@
                             <constraint firstItem="dh4-gf-2ME" firstAttribute="top" secondItem="Q07-QX-aZk" secondAttribute="bottom" id="rUw-su-O6n"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="vpB-Mn-6Dc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vi4-dH-9dl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="572" y="-201"/>
+            <point key="canvasLocation" x="1384" y="-201"/>
         </scene>
         <!--Journal-->
         <scene sceneID="d6M-Fk-2oE">
@@ -142,19 +140,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDa-J9-sZv">
                                 <rect key="frame" x="283" y="89" width="35" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fP-ov-iVM">
                                 <rect key="frame" x="290" y="115" width="20" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="822-if-g0k">
                                 <rect key="frame" x="280" y="143" width="40" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="entry" translatesAutoresizingMaskIntoConstraints="NO" id="pFD-wl-4Is">
@@ -197,6 +195,15 @@
                                     <action selector="submitButtonWasHit:" destination="Gye-xr-0eG" eventType="touchUpInside" id="vGX-fX-LHy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNj-yW-Bt7">
+                                <rect key="frame" x="16" y="28" width="44" height="30"/>
+                                <state key="normal" title="or nah">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonWasHit:" destination="Gye-xr-0eG" eventType="touchUpInside" id="iuj-dw-GIt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -205,6 +212,7 @@
                             <constraint firstItem="C3h-L1-5em" firstAttribute="top" secondItem="YR1-w6-osQ" secondAttribute="bottom" constant="70" id="Mi0-Qj-ubf"/>
                             <constraint firstItem="C3h-L1-5em" firstAttribute="top" secondItem="pFD-wl-4Is" secondAttribute="bottom" constant="200" id="NL9-rr-3dE"/>
                             <constraint firstAttribute="centerXWithinMargins" secondItem="at2-T9-Wdz" secondAttribute="trailing" constant="44" id="RnQ-Vy-2V6"/>
+                            <constraint firstItem="jNj-yW-Bt7" firstAttribute="top" secondItem="0Fp-Fv-kss" secondAttribute="bottom" constant="8" id="SdN-Rd-Pyh"/>
                             <constraint firstItem="822-if-g0k" firstAttribute="top" secondItem="9fP-ov-iVM" secondAttribute="bottom" constant="8" id="X9a-wf-TfN"/>
                             <constraint firstItem="CNF-Er-HaF" firstAttribute="top" secondItem="brU-NV-Duo" secondAttribute="bottom" constant="44" id="bEy-Kq-pR0"/>
                             <constraint firstItem="brU-NV-Duo" firstAttribute="top" secondItem="0Fp-Fv-kss" secondAttribute="bottom" constant="44" id="ch0-fq-RgJ"/>
@@ -215,6 +223,7 @@
                             <constraint firstAttribute="centerX" secondItem="822-if-g0k" secondAttribute="centerX" id="g5V-yO-jMf"/>
                             <constraint firstAttribute="centerX" secondItem="brU-NV-Duo" secondAttribute="centerX" id="gtE-ZY-Hzo"/>
                             <constraint firstItem="9fP-ov-iVM" firstAttribute="top" secondItem="HDa-J9-sZv" secondAttribute="bottom" constant="6" id="maI-ov-ezV"/>
+                            <constraint firstItem="jNj-yW-Bt7" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" id="nGg-xf-rPF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CNF-Er-HaF" secondAttribute="trailing" constant="44" id="nWD-jk-ajC"/>
                             <constraint firstItem="YR1-w6-osQ" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="centerXWithinMargins" constant="44" id="qJ2-ad-hk7"/>
                             <constraint firstItem="pFD-wl-4Is" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="44" id="s58-zc-R71"/>
@@ -223,17 +232,17 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Journal" image="journal" id="eL1-iF-lcD"/>
                     <connections>
+                        <outlet property="backButton" destination="jNj-yW-Bt7" id="eTD-w4-SOP"/>
                         <outlet property="dateLabel" destination="9fP-ov-iVM" id="Aeh-8U-ebV"/>
                         <outlet property="entryTextView" destination="pFD-wl-4Is" id="M7r-RP-2Ah"/>
                         <outlet property="monthLabel" destination="HDa-J9-sZv" id="g4P-SC-z2H"/>
                         <outlet property="titleTextField" destination="CNF-Er-HaF" id="2OV-Dm-wgV"/>
                         <outlet property="yearLabel" destination="822-if-g0k" id="5Zs-rU-jjT"/>
-                        <segue destination="U3Y-Ov-0oa" kind="show" id="ABP-rT-mMi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8X-zN-qXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1331" y="80"/>
+            <point key="canvasLocation" x="2143" y="80"/>
         </scene>
         <!--Home-->
         <scene sceneID="vcQ-sF-ryQ">
@@ -250,7 +259,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dfiuhsdgih isudfh sufhs dfdhf isudhf " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFT-0i-CJ2">
                                 <rect key="frame" x="161" y="290" width="279" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -296,7 +305,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="SN3-2Q-TSv" kind="relationship" relationship="viewControllers" id="Vsv-ed-zm7"/>
-                        <segue destination="Gye-xr-0eG" kind="relationship" relationship="viewControllers" id="vge-ct-ISH"/>
+                        <segue destination="6Ts-T7-w0L" kind="relationship" relationship="viewControllers" id="1eZ-rh-Bhk"/>
                         <segue destination="pZZ-ZF-BzU" kind="relationship" relationship="viewControllers" id="Fzm-gx-RS1"/>
                         <segue destination="rRh-ur-wCU" kind="relationship" relationship="viewControllers" id="tPz-Mh-yZU"/>
                     </connections>
@@ -342,7 +351,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="mainCell" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WDJ-t0-Wny">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WQE-dl-i3u">
@@ -381,6 +390,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="logOutButtonWasHit:" destination="Owr-GU-d8d" eventType="touchUpInside" id="W0I-l7-lVA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -398,9 +410,12 @@
                     <connections>
                         <outlet property="tableView" destination="fLO-tY-kPf" id="UOf-n9-FdG"/>
                         <segue destination="QgU-PG-77f" kind="show" identifier="goToFunctions" id="qXq-AT-jke"/>
+                        <segue destination="pKf-Gv-hHe" kind="unwind" identifier="logOut" unwindAction="unwindToMain:" id="eLg-Wf-eSB"/>
+                        <segue destination="pKf-Gv-hHe" kind="unwind" unwindAction="unwindToMain:" id="AJf-1y-Yri"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AG8-NX-wAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="pKf-Gv-hHe" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1464" y="1271"/>
         </scene>
@@ -419,7 +434,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Or" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8v3-0J-0JR">
                                 <rect key="frame" x="43" y="173" width="19" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -453,7 +468,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Snd-d2-Zfu">
                                 <rect key="frame" x="279" y="164" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5Q-Rh-M55">
@@ -467,7 +482,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69w-FG-tON">
                                 <rect key="frame" x="279" y="240" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzr-5g-O36">
@@ -577,7 +592,7 @@
         <!--Journal-->
         <scene sceneID="zRS-kM-9nM">
             <objects>
-                <viewController id="U3Y-Ov-0oa" customClass="JournalViewController" customModule="Lucid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="U3Y-Ov-0oa" customClass="SeeJournalViewController" customModule="Lucid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MlB-HF-t0k"/>
                         <viewControllerLayoutGuide type="bottom" id="QSe-vK-GO1"/>
@@ -596,28 +611,28 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR8-pz-pBj">
                                 <rect key="frame" x="283" y="69" width="35" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxS-cC-Bcz">
                                 <rect key="frame" x="290" y="95" width="20" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adv-qO-trX">
                                 <rect key="frame" x="280" y="123" width="40" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZ3-Oa-eSw">
                                 <rect key="frame" x="277" y="193" width="37" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="I have totally non weird dreams that are amazing and awesome. Please analyze them YooJin" translatesAutoresizingMaskIntoConstraints="NO" id="dLz-bh-rnC">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="I have totally non weird dreams that are amazing and awesome. Please analyze them YooJin" translatesAutoresizingMaskIntoConstraints="NO" id="dLz-bh-rnC">
                                 <rect key="frame" x="80" y="224" width="445" height="310"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -646,14 +661,35 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Journal" image="journal" id="sZK-3C-p59"/>
                     <connections>
-                        <outlet property="dateLabel" destination="LxS-cC-Bcz" id="39h-yx-PPM"/>
-                        <outlet property="monthLabel" destination="XR8-pz-pBj" id="cD0-Nm-akg"/>
-                        <outlet property="yearLabel" destination="adv-qO-trX" id="ksh-g3-x3G"/>
+                        <outlet property="dateLabel" destination="LxS-cC-Bcz" id="JSw-FB-mji"/>
+                        <outlet property="monthLabel" destination="XR8-pz-pBj" id="GXh-ap-cqy"/>
+                        <outlet property="textView" destination="dLz-bh-rnC" id="NqE-4p-8qb"/>
+                        <outlet property="titleLabel" destination="tZ3-Oa-eSw" id="KYc-6P-QYc"/>
+                        <outlet property="yearLabel" destination="adv-qO-trX" id="k7x-gR-Vnm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8j-xP-koe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1296" y="-668"/>
+            <point key="canvasLocation" x="2108" y="-668"/>
+        </scene>
+        <!--Journal-->
+        <scene sceneID="cU9-mD-8yf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="6Ts-T7-w0L" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Journal" image="journal" id="L5G-rD-xQv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AP0-dy-VOq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jii-l4-eMB" kind="relationship" relationship="rootViewController" id="gU6-Rl-qRI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oaO-I8-gd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="572" y="-201"/>
         </scene>
     </scenes>
     <resources>
@@ -663,8 +699,4 @@
         <image name="pretty-things" width="463" height="463"/>
         <image name="setting" width="28" height="29"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="1bI-gP-coT"/>
-        <segue reference="mTl-2k-cXr"/>
-    </inferredMetricsTieBreakers>
 </document>

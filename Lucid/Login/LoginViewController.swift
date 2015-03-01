@@ -69,5 +69,5 @@ class LoginViewController: UIViewController {
     
     }
     
-    @IBAction func unwindToMain(sender: AnyObject) {}
+    @IBAction func unwindToMain(segue: UIStoryboardSegue) {}
 }
