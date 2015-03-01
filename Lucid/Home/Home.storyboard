@@ -40,12 +40,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q07-QX-aZk">
-                                <rect key="frame" x="266" y="145" width="69" height="27"/>
-                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="15"/>
-                                <state key="normal" title="JOURNAL">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <rect key="frame" x="266" y="116" width="98" height="56"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="19"/>
+                                <state key="normal" title="JOURNAL"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tk-2I-VVv">
                                 <rect key="frame" x="248" y="297" width="106" height="27"/>
