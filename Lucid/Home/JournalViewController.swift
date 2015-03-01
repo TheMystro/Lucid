@@ -16,13 +16,11 @@ class JournalViewController: UIViewController {
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var entryTextView: UITextView!
-    @IBOutlet weak var methodsTextField: UITextField!
-    @IBOutlet weak var statsTextView: UITextView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        addTextDismiss()
         
-        for i in [titleTextField, methodsTextField] {
+        for i in [titleTextField] {
             let spacerView = UIView(frame: CGRectMake(0, 0, 10, 10))
             i.leftViewMode = .Always
             i.leftView = spacerView

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="395-s8-VOn">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -32,58 +33,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pretty-things" translatesAutoresizingMaskIntoConstraints="NO" id="brU-NV-Duo">
-                                <rect key="frame" x="266" y="64" width="70" height="70"/>
+                                <rect key="frame" x="260" y="64" width="82" height="82"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="brU-NV-Duo" secondAttribute="height" multiplier="1:1" id="AiU-9K-Bxj"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDa-J9-sZv">
-                                <rect key="frame" x="283" y="71" width="35" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FEB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDa-J9-sZv">
+                                <rect key="frame" x="283" y="70" width="35" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fP-ov-iVM">
-                                <rect key="frame" x="291" y="97" width="20" height="20"/>
+                                <rect key="frame" x="290" y="96" width="20" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="822-if-g0k">
-                                <rect key="frame" x="280" y="125" width="40" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="822-if-g0k">
+                                <rect key="frame" x="280" y="124" width="40" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="entry" translatesAutoresizingMaskIntoConstraints="NO" id="pFD-wl-4Is">
-                                <rect key="frame" x="60" y="234" width="480" height="40"/>
+                                <rect key="frame" x="60" y="231" width="480" height="80"/>
                                 <color key="backgroundColor" red="0.94488918781280518" green="0.94541853666305542" blue="0.94875842332839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="jdE-be-FZO"/>
+                                    <constraint firstAttribute="height" constant="80" id="TMH-hN-StZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5DU-wH-9Cv">
-                                <rect key="frame" x="60" y="285" width="480" height="30"/>
-                                <color key="backgroundColor" red="0.94488918781280518" green="0.94541853666305542" blue="0.94875842332839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="e58-B6-f1D"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="stats" translatesAutoresizingMaskIntoConstraints="NO" id="sk5-jG-yiO">
-                                <rect key="frame" x="60" y="326" width="480" height="50"/>
-                                <color key="backgroundColor" red="0.94488918781280518" green="0.94541853666305542" blue="0.94875842332839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="WjS-h3-EJD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CNF-Er-HaF">
-                                <rect key="frame" x="60" y="193" width="480" height="30"/>
+                                <rect key="frame" x="60" y="190" width="480" height="30"/>
                                 <color key="backgroundColor" red="0.94488918781280518" green="0.94541853666305542" blue="0.94875842332839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="MGQ-1Z-MM7"/>
@@ -91,28 +74,42 @@
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YR1-w6-osQ">
+                                <rect key="frame" x="344" y="452" width="47" height="29"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="17"/>
+                                <state key="normal" title="discard">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="at2-T9-Wdz">
+                                <rect key="frame" x="211" y="452" width="45" height="29"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="17"/>
+                                <state key="normal" title="submit">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pFD-wl-4Is" firstAttribute="top" secondItem="CNF-Er-HaF" secondAttribute="bottom" constant="11" id="0mu-j2-M3Z"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pFD-wl-4Is" secondAttribute="trailing" constant="44" id="3cz-F4-7oE"/>
-                            <constraint firstItem="5DU-wH-9Cv" firstAttribute="top" secondItem="pFD-wl-4Is" secondAttribute="bottom" constant="11" id="CHv-lR-lta"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sk5-jG-yiO" secondAttribute="trailing" constant="44" id="RGq-mi-LBG"/>
+                            <constraint firstItem="C3h-L1-5em" firstAttribute="top" secondItem="YR1-w6-osQ" secondAttribute="bottom" constant="70" id="Mi0-Qj-ubf"/>
+                            <constraint firstItem="C3h-L1-5em" firstAttribute="top" secondItem="pFD-wl-4Is" secondAttribute="bottom" constant="240" id="NL9-rr-3dE"/>
+                            <constraint firstAttribute="centerXWithinMargins" secondItem="at2-T9-Wdz" secondAttribute="trailing" constant="44" id="RnQ-Vy-2V6"/>
                             <constraint firstItem="822-if-g0k" firstAttribute="top" secondItem="9fP-ov-iVM" secondAttribute="bottom" constant="8" id="X9a-wf-TfN"/>
                             <constraint firstItem="CNF-Er-HaF" firstAttribute="top" secondItem="brU-NV-Duo" secondAttribute="bottom" constant="44" id="bEy-Kq-pR0"/>
                             <constraint firstItem="brU-NV-Duo" firstAttribute="top" secondItem="0Fp-Fv-kss" secondAttribute="bottom" constant="44" id="ch0-fq-RgJ"/>
                             <constraint firstAttribute="centerX" secondItem="HDa-J9-sZv" secondAttribute="centerX" id="cnK-12-gZ4"/>
                             <constraint firstItem="CNF-Er-HaF" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="44" id="czA-nM-yyO"/>
                             <constraint firstItem="9fP-ov-iVM" firstAttribute="centerY" secondItem="brU-NV-Duo" secondAttribute="centerY" id="fhV-lt-EuK"/>
+                            <constraint firstItem="C3h-L1-5em" firstAttribute="top" secondItem="at2-T9-Wdz" secondAttribute="bottom" constant="70" id="g36-LO-ZJT"/>
                             <constraint firstAttribute="centerX" secondItem="822-if-g0k" secondAttribute="centerX" id="g5V-yO-jMf"/>
                             <constraint firstAttribute="centerX" secondItem="brU-NV-Duo" secondAttribute="centerX" id="gtE-ZY-Hzo"/>
-                            <constraint firstItem="sk5-jG-yiO" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="44" id="iHH-MD-Ltt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5DU-wH-9Cv" secondAttribute="trailing" constant="44" id="kTd-8j-VlY"/>
                             <constraint firstItem="9fP-ov-iVM" firstAttribute="top" secondItem="HDa-J9-sZv" secondAttribute="bottom" constant="6" id="maI-ov-ezV"/>
-                            <constraint firstItem="5DU-wH-9Cv" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="44" id="nW9-2q-BhQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CNF-Er-HaF" secondAttribute="trailing" constant="44" id="nWD-jk-ajC"/>
-                            <constraint firstItem="sk5-jG-yiO" firstAttribute="top" secondItem="5DU-wH-9Cv" secondAttribute="bottom" constant="11" id="nyx-Da-D0X"/>
-                            <constraint firstItem="C3h-L1-5em" firstAttribute="top" secondItem="sk5-jG-yiO" secondAttribute="bottom" constant="175" id="r1S-Oe-lil"/>
+                            <constraint firstItem="YR1-w6-osQ" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="centerXWithinMargins" constant="44" id="qJ2-ad-hk7"/>
                             <constraint firstItem="pFD-wl-4Is" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="44" id="s58-zc-R71"/>
                             <constraint firstAttribute="centerX" secondItem="9fP-ov-iVM" secondAttribute="centerX" id="toR-0a-0Ch"/>
                         </constraints>
@@ -121,16 +118,14 @@
                     <connections>
                         <outlet property="dateLabel" destination="9fP-ov-iVM" id="Aeh-8U-ebV"/>
                         <outlet property="entryTextView" destination="pFD-wl-4Is" id="M7r-RP-2Ah"/>
-                        <outlet property="methodsTextField" destination="5DU-wH-9Cv" id="ioL-QW-ij7"/>
                         <outlet property="monthLabel" destination="HDa-J9-sZv" id="g4P-SC-z2H"/>
-                        <outlet property="statsTextView" destination="sk5-jG-yiO" id="xDd-Du-JUL"/>
                         <outlet property="titleTextField" destination="CNF-Er-HaF" id="2OV-Dm-wgV"/>
                         <outlet property="yearLabel" destination="822-if-g0k" id="5Zs-rU-jjT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8X-zN-qXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="834" y="-194"/>
+            <point key="canvasLocation" x="849" y="-188"/>
         </scene>
         <!--Home-->
         <scene sceneID="vcQ-sF-ryQ">
