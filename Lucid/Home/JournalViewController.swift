@@ -16,6 +16,8 @@ class JournalViewController: UIViewController {
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var entryTextView: UITextView!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addTextDismiss()
@@ -25,10 +27,19 @@ class JournalViewController: UIViewController {
             i.leftViewMode = .Always
             i.leftView = spacerView
         }
-        
-        
     }
     
+    @IBAction func submitButtonWasHit(sender: AnyObject) {
+        view.frame = CGRectMake(0, 0, view.frame.width, view.frame.height)
+        
+        super.viewWillAppear(true)
+    }
+
+    @IBAction func discardButtonWasHit(sender: AnyObject) {
+        view.frame = CGRectMake(0, -40, view.frame.width, view.frame.height)
+        
+        super.viewWillAppear(true)
+    }
     /*
     // MARK: - Navigation
 

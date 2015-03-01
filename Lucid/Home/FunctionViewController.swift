@@ -9,6 +9,7 @@
 import UIKit
 
 class FunctionViewController: UIViewController {
+    @IBOutlet weak var backButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +21,16 @@ class FunctionViewController: UIViewController {
         v.addGestureRecognizer(gestureRecog)
         view.addSubview(v)
         
+        view.bringSubviewToFront(backButton)
     }
     
     func swipeBack(gesture: UIGestureRecognizer) {
         navigationController?.popViewControllerAnimated(true)
     }
     
+    @IBAction func backWasHit(sender: AnyObject) {
+        navigationController?.popViewControllerAnimated(true)
+    }
     /*
     // MARK: - Navigation
 

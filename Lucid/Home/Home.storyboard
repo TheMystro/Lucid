@@ -32,26 +32,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pretty-things" translatesAutoresizingMaskIntoConstraints="NO" id="brU-NV-Duo">
-                                <rect key="frame" x="260" y="64" width="82" height="82"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pretty-things" translatesAutoresizingMaskIntoConstraints="NO" id="brU-NV-Duo">
+                                <rect key="frame" x="259" y="64" width="82" height="82"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="brU-NV-Duo" secondAttribute="height" multiplier="1:1" id="AiU-9K-Bxj"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FEB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDa-J9-sZv">
-                                <rect key="frame" x="283" y="70" width="35" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDa-J9-sZv">
+                                <rect key="frame" x="283" y="69" width="35" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fP-ov-iVM">
-                                <rect key="frame" x="290" y="96" width="20" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fP-ov-iVM">
+                                <rect key="frame" x="290" y="95" width="20" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="822-if-g0k">
-                                <rect key="frame" x="280" y="124" width="40" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="822-if-g0k">
+                                <rect key="frame" x="280" y="123" width="40" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -81,6 +81,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="discardButtonWasHit:" destination="Gye-xr-0eG" eventType="touchUpInside" id="mip-EQ-7MZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="at2-T9-Wdz">
                                 <rect key="frame" x="211" y="452" width="45" height="29"/>
@@ -89,6 +92,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitButtonWasHit:" destination="Gye-xr-0eG" eventType="touchUpInside" id="vGX-fX-LHy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -139,14 +145,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Or" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFT-0i-CJ2">
-                                <rect key="frame" x="43" y="173" width="19" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dfiuhsdgih isudfh sufhs dfdhf isudhf " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFT-0i-CJ2">
+                                <rect key="frame" x="161" y="290" width="279" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="bFT-0i-CJ2" secondAttribute="centerX" id="3TI-9J-Y6o"/>
+                            <constraint firstAttribute="centerY" secondItem="bFT-0i-CJ2" secondAttribute="centerY" id="wKM-aw-Ttr"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="eca-PV-34G"/>
                 </viewController>
@@ -280,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AG8-NX-wAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1466" y="1187"/>
+            <point key="canvasLocation" x="1464" y="1271"/>
         </scene>
         <!--Methods-->
         <scene sceneID="y2T-mw-bhR">
@@ -307,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vmY-VO-ZDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="654" y="395"/>
+            <point key="canvasLocation" x="884" y="483"/>
         </scene>
         <!--Function View Controller-->
         <scene sceneID="x9v-qv-KyI">
@@ -385,9 +395,19 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejn-bh-Rre">
+                                <rect key="frame" x="31" y="28" width="44" height="30"/>
+                                <state key="normal" title="or nah">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backWasHit:" destination="QgU-PG-77f" eventType="touchUpInside" id="6ny-kG-LVP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ejn-bh-Rre" firstAttribute="leading" secondItem="bIi-SF-I8z" secondAttribute="leadingMargin" constant="15" id="0Pt-DE-d1N"/>
                             <constraint firstAttribute="centerX" secondItem="QXo-L1-l1g" secondAttribute="centerX" id="5io-ak-EHn"/>
                             <constraint firstAttribute="centerX" secondItem="Nyo-bN-Kih" secondAttribute="centerX" id="9UQ-Ab-05Q"/>
                             <constraint firstItem="Nyo-bN-Kih" firstAttribute="height" secondItem="QXo-L1-l1g" secondAttribute="height" id="ApG-b8-34K"/>
@@ -401,6 +421,7 @@
                             <constraint firstItem="kre-h6-IUA" firstAttribute="top" secondItem="QTu-47-4zO" secondAttribute="bottom" constant="65" id="WTS-ay-hrp"/>
                             <constraint firstItem="69w-FG-tON" firstAttribute="top" secondItem="v5Q-Rh-M55" secondAttribute="bottom" constant="20" id="Wrc-56-2iI"/>
                             <constraint firstItem="wzr-5g-O36" firstAttribute="top" secondItem="69w-FG-tON" secondAttribute="bottom" constant="15" id="XtW-XG-lNI"/>
+                            <constraint firstItem="Ejn-bh-Rre" firstAttribute="top" secondItem="QTu-47-4zO" secondAttribute="bottom" constant="8" id="aNq-lZ-hcH"/>
                             <constraint firstItem="LXy-dK-jgG" firstAttribute="top" secondItem="bph-PD-WkY" secondAttribute="bottom" constant="59" id="bB0-I4-mHM"/>
                             <constraint firstAttribute="centerX" secondItem="Snd-d2-Zfu" secondAttribute="centerX" id="bNq-Oy-OOy"/>
                             <constraint firstItem="Snd-d2-Zfu" firstAttribute="top" secondItem="kre-h6-IUA" secondAttribute="bottom" constant="19" id="for-r5-FaF"/>
@@ -413,13 +434,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="kEm-XA-fpw"/>
                     <connections>
+                        <outlet property="backButton" destination="Ejn-bh-Rre" id="a8k-ar-gEi"/>
                         <segue destination="nr0-CJ-Kch" kind="unwind" identifier="unwindToSettings" unwindAction="unwindToSettings:" id="cIx-VY-T42"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vZ-66-U6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="nr0-CJ-Kch" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2217" y="1187"/>
+            <point key="canvasLocation" x="2221" y="1271"/>
         </scene>
         <!--Settings-->
         <scene sceneID="fMZ-hn-VNo">
@@ -438,7 +460,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMh-0w-wq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="654" y="1187"/>
+            <point key="canvasLocation" x="638" y="1271"/>
         </scene>
     </scenes>
     <resources>
