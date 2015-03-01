@@ -26,7 +26,6 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         
         if indexPath.row == 0 {
             cell = tableView.dequeueReusableCellWithIdentifier("header") as UITableViewCell
-            cell.selectionStyle = .None
         } else {
             switch indexPath.section {
             case 4:
@@ -84,6 +83,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
             fatalError("motherfuck")
         }
         
+        cell.selectionStyle = .None
         return cell
     }
     
@@ -107,5 +107,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         default: fatalError("motherfuck")
         }
     }
+    
+    @IBAction func unwindToSettings(segue:UIStoryboardSegue){}
     
 }

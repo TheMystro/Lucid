@@ -13,8 +13,17 @@ class FunctionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        let v = UIView(frame: CGRectMake(0, 0, 80, view.frame.size.height))
+        let gestureRecog = UISwipeGestureRecognizer(target: self, action: "swipeBack:")
+        gestureRecog.direction = .Right
+        
+        v.addGestureRecognizer(gestureRecog)
+        view.addSubview(v)
+        
+    }
     
+    func swipeBack(gesture: UIGestureRecognizer) {
+        navigationController?.popViewControllerAnimated(true)
     }
     
     /*

@@ -20,7 +20,7 @@ class UIRoundedButton: UIButton {
     }
     
     func setFrameCircle() {
-        self.layer.cornerRadius = self.frame.size.width / 2 - 20
+        self.layer.cornerRadius = self.frame.size.height / 2
         self.clipsToBounds = true
     }
     
