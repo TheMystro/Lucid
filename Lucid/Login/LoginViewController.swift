@@ -57,4 +57,17 @@ class LoginViewController: UIViewController {
             }
         })
     }
+    
+    @IBAction func loginWasHit(sender: AnyObject) {
+        let sheet = MZFormSheetController(size: CGSize(width: view.frame.width - (2*22), height: view.frame.height - (2*22)), viewController: UIStoryboard(name: "Login", bundle: nil).instantiateViewControllerWithIdentifier("signIn") as UIViewController)
+        
+        mz_presentFormSheetWithViewController(sheet, animated: true, completionHandler: nil)
+    }
+
+
+    @IBAction func signupWasHit(sender: AnyObject) {
+    
+    }
+    
+    @IBAction func unwindToMain(sender: AnyObject) {}
 }

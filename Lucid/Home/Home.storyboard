@@ -21,9 +21,106 @@
             <string>AJensonPro-Regular</string>
             <string>AJensonPro-Regular</string>
             <string>AJensonPro-Regular</string>
+            <string>AJensonPro-Regular</string>
+            <string>AJensonPro-Regular</string>
+            <string>AJensonPro-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="SSY-ub-vfw">
+            <objects>
+                <viewController id="jii-l4-eMB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zs4-Pe-7hj"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Q0-eY-PWX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lgp-vO-UbG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q07-QX-aZk">
+                                <rect key="frame" x="266" y="145" width="69" height="27"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="15"/>
+                                <state key="normal" title="JOURNAL">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="U3Y-Ov-0oa" kind="showDetail" id="1bI-gP-coT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tk-2I-VVv">
+                                <rect key="frame" x="248" y="297" width="106" height="27"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="15"/>
+                                <state key="normal" title="ADD JOURNAL">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gye-xr-0eG" kind="showDetail" id="mTl-2k-cXr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXv-nK-XAt">
+                                <rect key="frame" x="257" y="448" width="87" height="27"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="15"/>
+                                <state key="normal" title="STATISTICS">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0fq-aX-M6Y">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="Iqq-gs-MIS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dh4-gf-2ME">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="IjP-g7-mAn"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d0n-4e-G96">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="oTh-Ww-ZjR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kfC-sY-h98">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="xwc-2B-Rlf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q07-QX-aZk" firstAttribute="top" secondItem="0fq-aX-M6Y" secondAttribute="bottom" id="0Tc-pS-Tgh"/>
+                            <constraint firstAttribute="centerX" secondItem="kfC-sY-h98" secondAttribute="centerX" id="0Yl-Fh-LEe"/>
+                            <constraint firstItem="kfC-sY-h98" firstAttribute="top" secondItem="sXv-nK-XAt" secondAttribute="bottom" id="2eS-bz-ufo"/>
+                            <constraint firstAttribute="centerX" secondItem="4Tk-2I-VVv" secondAttribute="centerX" constant="-0.5" id="5A0-AC-YtB"/>
+                            <constraint firstItem="4Tk-2I-VVv" firstAttribute="top" secondItem="dh4-gf-2ME" secondAttribute="bottom" id="AtN-ZR-dAR"/>
+                            <constraint firstAttribute="centerX" secondItem="0fq-aX-M6Y" secondAttribute="centerX" id="D2M-Ip-OIS"/>
+                            <constraint firstAttribute="centerX" secondItem="dh4-gf-2ME" secondAttribute="centerX" id="NVG-P5-kyu"/>
+                            <constraint firstItem="d0n-4e-G96" firstAttribute="top" secondItem="4Tk-2I-VVv" secondAttribute="bottom" id="Wdx-YV-BMr"/>
+                            <constraint firstAttribute="centerX" secondItem="d0n-4e-G96" secondAttribute="centerX" id="YWY-fZ-3JS"/>
+                            <constraint firstAttribute="centerX" secondItem="sXv-nK-XAt" secondAttribute="centerX" constant="-0.5" id="b4W-Ed-XNl"/>
+                            <constraint firstItem="sXv-nK-XAt" firstAttribute="top" secondItem="d0n-4e-G96" secondAttribute="bottom" id="fnh-KN-OmZ"/>
+                            <constraint firstItem="dh4-gf-2ME" firstAttribute="height" secondItem="0fq-aX-M6Y" secondAttribute="height" id="hVu-ch-7to"/>
+                            <constraint firstItem="8Q0-eY-PWX" firstAttribute="top" secondItem="kfC-sY-h98" secondAttribute="bottom" id="jnp-zg-Yc6"/>
+                            <constraint firstAttribute="centerX" secondItem="Q07-QX-aZk" secondAttribute="centerX" constant="-0.5" id="kYw-ve-wcZ"/>
+                            <constraint firstItem="kfC-sY-h98" firstAttribute="height" secondItem="dh4-gf-2ME" secondAttribute="height" id="nMT-HV-YOE"/>
+                            <constraint firstItem="d0n-4e-G96" firstAttribute="height" secondItem="0fq-aX-M6Y" secondAttribute="height" id="q0g-dW-x4o"/>
+                            <constraint firstItem="0fq-aX-M6Y" firstAttribute="top" secondItem="Zs4-Pe-7hj" secondAttribute="bottom" id="r4g-kI-DpR"/>
+                            <constraint firstItem="dh4-gf-2ME" firstAttribute="top" secondItem="Q07-QX-aZk" secondAttribute="bottom" id="rUw-su-O6n"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vi4-dH-9dl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="572" y="-201"/>
+        </scene>
         <!--Journal-->
         <scene sceneID="d6M-Fk-2oE">
             <objects>
@@ -37,32 +134,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pretty-things" translatesAutoresizingMaskIntoConstraints="NO" id="brU-NV-Duo">
-                                <rect key="frame" x="259" y="64" width="82" height="82"/>
+                                <rect key="frame" x="239" y="64" width="122" height="122"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="brU-NV-Duo" secondAttribute="height" multiplier="1:1" id="AiU-9K-Bxj"/>
-                                    <constraint firstAttribute="width" constant="82" id="u7f-nf-Cu1"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDa-J9-sZv">
-                                <rect key="frame" x="283" y="69" width="35" height="20"/>
+                                <rect key="frame" x="283" y="89" width="35" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fP-ov-iVM">
-                                <rect key="frame" x="290" y="95" width="20" height="20"/>
+                                <rect key="frame" x="290" y="115" width="20" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="822-if-g0k">
-                                <rect key="frame" x="280" y="123" width="40" height="20"/>
+                                <rect key="frame" x="280" y="143" width="40" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="entry" translatesAutoresizingMaskIntoConstraints="NO" id="pFD-wl-4Is">
-                                <rect key="frame" x="60" y="231" width="480" height="80"/>
+                                <rect key="frame" x="60" y="271" width="480" height="80"/>
                                 <color key="backgroundColor" red="0.94488918781280518" green="0.94541853666305542" blue="0.94875842332839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="TMH-hN-StZ"/>
@@ -71,7 +167,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CNF-Er-HaF">
-                                <rect key="frame" x="60" y="190" width="480" height="30"/>
+                                <rect key="frame" x="60" y="230" width="480" height="30"/>
                                 <color key="backgroundColor" red="0.94488918781280518" green="0.94541853666305542" blue="0.94875842332839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="MGQ-1Z-MM7"/>
@@ -107,7 +203,7 @@
                             <constraint firstItem="pFD-wl-4Is" firstAttribute="top" secondItem="CNF-Er-HaF" secondAttribute="bottom" constant="11" id="0mu-j2-M3Z"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pFD-wl-4Is" secondAttribute="trailing" constant="44" id="3cz-F4-7oE"/>
                             <constraint firstItem="C3h-L1-5em" firstAttribute="top" secondItem="YR1-w6-osQ" secondAttribute="bottom" constant="70" id="Mi0-Qj-ubf"/>
-                            <constraint firstItem="C3h-L1-5em" firstAttribute="top" secondItem="pFD-wl-4Is" secondAttribute="bottom" constant="240" id="NL9-rr-3dE"/>
+                            <constraint firstItem="C3h-L1-5em" firstAttribute="top" secondItem="pFD-wl-4Is" secondAttribute="bottom" constant="200" id="NL9-rr-3dE"/>
                             <constraint firstAttribute="centerXWithinMargins" secondItem="at2-T9-Wdz" secondAttribute="trailing" constant="44" id="RnQ-Vy-2V6"/>
                             <constraint firstItem="822-if-g0k" firstAttribute="top" secondItem="9fP-ov-iVM" secondAttribute="bottom" constant="8" id="X9a-wf-TfN"/>
                             <constraint firstItem="CNF-Er-HaF" firstAttribute="top" secondItem="brU-NV-Duo" secondAttribute="bottom" constant="44" id="bEy-Kq-pR0"/>
@@ -137,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8X-zN-qXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1103" y="-162"/>
+            <point key="canvasLocation" x="1331" y="80"/>
         </scene>
         <!--Home-->
         <scene sceneID="vcQ-sF-ryQ">
@@ -222,7 +318,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fLO-tY-kPf">
-                                <rect key="frame" x="16" y="40" width="568" height="511"/>
+                                <rect key="frame" x="16" y="40" width="568" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="header" textLabel="dN2-Of-If0" style="IBUITableViewCellStyleDefault" id="gWK-rM-PaI">
@@ -279,13 +375,23 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9S-oq-vKE" customClass="UIRoundedButtonWhite" customModule="Lucid" customModuleProvider="target">
+                                <rect key="frame" x="277" y="499" width="56" height="30"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fLO-tY-kPf" firstAttribute="leading" secondItem="sSg-mI-6HK" secondAttribute="leadingMargin" id="MqS-Xj-Fm8"/>
                             <constraint firstItem="fLO-tY-kPf" firstAttribute="top" secondItem="vNg-nz-xam" secondAttribute="bottom" constant="20" id="PEY-Al-uop"/>
-                            <constraint firstItem="5d3-eJ-7VU" firstAttribute="top" secondItem="fLO-tY-kPf" secondAttribute="bottom" id="ZEg-XI-cXq"/>
+                            <constraint firstItem="5d3-eJ-7VU" firstAttribute="top" secondItem="k9S-oq-vKE" secondAttribute="bottom" constant="22" id="QQR-FM-RvN"/>
+                            <constraint firstItem="k9S-oq-vKE" firstAttribute="leading" secondItem="sSg-mI-6HK" secondAttribute="leadingMargin" constant="88" id="ak1-Tn-fdA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k9S-oq-vKE" secondAttribute="trailing" constant="88" id="aq6-2K-EyB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fLO-tY-kPf" secondAttribute="trailing" id="dXP-E1-H5c"/>
+                            <constraint firstItem="k9S-oq-vKE" firstAttribute="top" secondItem="fLO-tY-kPf" secondAttribute="bottom" constant="11" id="riU-c0-Dcy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="It5-IJ-XZ7"/>
@@ -372,13 +478,13 @@
                                     <constraint firstAttribute="width" constant="140" id="HiU-jO-x0o"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nyo-bN-Kih">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nyo-bN-Kih">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="gK0-ww-JBn"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-L1-l1g">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-L1-l1g">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="Pkd-xU-jUJ"/>
@@ -511,7 +617,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="I have totally non weird dreams that are amazing and awesome. Please analyze them YooJin" translatesAutoresizingMaskIntoConstraints="NO" id="dLz-bh-rnC">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="I have totally non weird dreams that are amazing and awesome. Please analyze them YooJin" translatesAutoresizingMaskIntoConstraints="NO" id="dLz-bh-rnC">
                                 <rect key="frame" x="80" y="224" width="445" height="310"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -547,7 +653,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8j-xP-koe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1846" y="-162"/>
+            <point key="canvasLocation" x="1296" y="-668"/>
         </scene>
     </scenes>
     <resources>
@@ -557,4 +663,8 @@
         <image name="pretty-things" width="463" height="463"/>
         <image name="setting" width="28" height="29"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="1bI-gP-coT"/>
+        <segue reference="mTl-2k-cXr"/>
+    </inferredMetricsTieBreakers>
 </document>

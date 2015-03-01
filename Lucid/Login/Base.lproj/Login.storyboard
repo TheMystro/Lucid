@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lucid" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5Q-M1-J9Q">
-                                <rect key="frame" x="279" y="321" width="43" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucid" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5Q-M1-J9Q">
+                                <rect key="frame" x="280" y="321" width="42" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -31,8 +31,8 @@
                                     <constraint firstAttribute="width" secondItem="lpq-01-jib" secondAttribute="height" id="lYZ-mX-jQj"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Learn method to lucid dream" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dt2-ru-DPE">
-                                <rect key="frame" x="60" y="360" width="480" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn method to lucid dream" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dt2-ru-DPE">
+                                <rect key="frame" x="60" y="359" width="480" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -53,6 +53,9 @@
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginWasHit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BWV-rm-0vH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygq-wK-Mta">
                                 <rect key="frame" x="275" y="506" width="51" height="30"/>
@@ -60,20 +63,23 @@
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signupWasHit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vH5-y9-jFO"/>
+                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yc1-qO-oiP">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yc1-qO-oiP">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="fIF-BU-RFd"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ni-O2-JmY">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ni-O2-JmY">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="kZG-wm-jfR"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="te9-ku-sIc">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="te9-ku-sIc">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="01S-M4-4tU"/>
@@ -127,6 +133,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p0l-yX-BR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1057" y="1089"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="706-VJ-nHk">
+            <objects>
+                <viewController storyboardIdentifier="signIn" id="5rV-Or-Tr6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ExZ-W2-rJK"/>
+                        <viewControllerLayoutGuide type="bottom" id="CcR-So-rOX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fKM-1v-CwB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="92b-yM-XjV">
+                                <rect key="frame" x="252" y="119" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VE8-vH-iOA">
+                                <rect key="frame" x="252" y="75" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VE8-vH-iOA" firstAttribute="top" secondItem="ExZ-W2-rJK" secondAttribute="bottom" constant="55" id="Ifd-hc-Bx6"/>
+                            <constraint firstItem="VE8-vH-iOA" firstAttribute="leading" secondItem="fKM-1v-CwB" secondAttribute="leadingMargin" constant="236" id="TvO-Ki-a0k"/>
+                            <constraint firstItem="92b-yM-XjV" firstAttribute="top" secondItem="VE8-vH-iOA" secondAttribute="bottom" constant="14" id="ZHn-Fv-xCW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="92b-yM-XjV" secondAttribute="trailing" constant="235" id="ccO-kS-eLW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VE8-vH-iOA" secondAttribute="trailing" constant="235" id="ejL-dO-jR6"/>
+                            <constraint firstItem="92b-yM-XjV" firstAttribute="leading" secondItem="fKM-1v-CwB" secondAttribute="leadingMargin" constant="236" id="gbf-hZ-5QO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W0g-BI-SlX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047" y="1993"/>
         </scene>
         <!--tutorialPageVC-->
         <scene sceneID="gn9-iw-Ngv">
