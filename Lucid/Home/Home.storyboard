@@ -17,6 +17,10 @@
             <string>AJensonPro-Regular</string>
             <string>AJensonPro-Regular</string>
             <string>AJensonPro-Regular</string>
+            <string>AJensonPro-Regular</string>
+            <string>AJensonPro-Regular</string>
+            <string>AJensonPro-Regular</string>
+            <string>AJensonPro-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -36,6 +40,7 @@
                                 <rect key="frame" x="259" y="64" width="82" height="82"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="brU-NV-Duo" secondAttribute="height" multiplier="1:1" id="AiU-9K-Bxj"/>
+                                    <constraint firstAttribute="width" constant="82" id="u7f-nf-Cu1"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDa-J9-sZv">
@@ -127,11 +132,12 @@
                         <outlet property="monthLabel" destination="HDa-J9-sZv" id="g4P-SC-z2H"/>
                         <outlet property="titleTextField" destination="CNF-Er-HaF" id="2OV-Dm-wgV"/>
                         <outlet property="yearLabel" destination="822-if-g0k" id="5Zs-rU-jjT"/>
+                        <segue destination="U3Y-Ov-0oa" kind="show" id="ABP-rT-mMi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8X-zN-qXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="-188"/>
+            <point key="canvasLocation" x="1103" y="-162"/>
         </scene>
         <!--Home-->
         <scene sceneID="vcQ-sF-ryQ">
@@ -366,13 +372,13 @@
                                     <constraint firstAttribute="width" constant="140" id="HiU-jO-x0o"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nyo-bN-Kih">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nyo-bN-Kih">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="gK0-ww-JBn"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-L1-l1g">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-L1-l1g">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="Pkd-xU-jUJ"/>
@@ -461,6 +467,87 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMh-0w-wq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="638" y="1271"/>
+        </scene>
+        <!--Journal-->
+        <scene sceneID="zRS-kM-9nM">
+            <objects>
+                <viewController id="U3Y-Ov-0oa" customClass="JournalViewController" customModule="Lucid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MlB-HF-t0k"/>
+                        <viewControllerLayoutGuide type="bottom" id="QSe-vK-GO1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T1a-9a-Zol">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pretty-things" translatesAutoresizingMaskIntoConstraints="NO" id="oLf-Gz-FMX">
+                                <rect key="frame" x="259" y="64" width="82" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oLf-Gz-FMX" secondAttribute="height" multiplier="1:1" id="Mjw-gf-NA9"/>
+                                    <constraint firstAttribute="width" constant="82" id="Oet-v5-PW2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR8-pz-pBj">
+                                <rect key="frame" x="283" y="69" width="35" height="20"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxS-cC-Bcz">
+                                <rect key="frame" x="290" y="95" width="20" height="20"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adv-qO-trX">
+                                <rect key="frame" x="280" y="123" width="40" height="20"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZ3-Oa-eSw">
+                                <rect key="frame" x="277" y="193" width="37" height="20"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="I have totally non weird dreams that are amazing and awesome. Please analyze them YooJin" translatesAutoresizingMaskIntoConstraints="NO" id="dLz-bh-rnC">
+                                <rect key="frame" x="80" y="224" width="445" height="310"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tZ3-Oa-eSw" firstAttribute="top" secondItem="oLf-Gz-FMX" secondAttribute="bottom" constant="47" id="3hG-PR-NOe"/>
+                            <constraint firstItem="oLf-Gz-FMX" firstAttribute="top" secondItem="MlB-HF-t0k" secondAttribute="bottom" constant="44" id="4eJ-bN-FeT"/>
+                            <constraint firstItem="LxS-cC-Bcz" firstAttribute="top" secondItem="XR8-pz-pBj" secondAttribute="bottom" constant="6" id="623-BC-pjl"/>
+                            <constraint firstItem="dLz-bh-rnC" firstAttribute="leading" secondItem="T1a-9a-Zol" secondAttribute="leadingMargin" constant="64" id="9ZI-Fu-8bb"/>
+                            <constraint firstItem="adv-qO-trX" firstAttribute="top" secondItem="LxS-cC-Bcz" secondAttribute="bottom" constant="8" id="9kj-Qg-II7"/>
+                            <constraint firstItem="dLz-bh-rnC" firstAttribute="top" secondItem="tZ3-Oa-eSw" secondAttribute="bottom" constant="11" id="GBs-fe-v9o"/>
+                            <constraint firstAttribute="centerX" secondItem="adv-qO-trX" secondAttribute="centerX" id="GXs-f6-pT9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dLz-bh-rnC" secondAttribute="trailing" constant="59" id="GXt-zP-X4c"/>
+                            <constraint firstItem="oLf-Gz-FMX" firstAttribute="top" secondItem="MlB-HF-t0k" secondAttribute="bottom" constant="44" id="NSL-G3-odW"/>
+                            <constraint firstAttribute="centerX" secondItem="XR8-pz-pBj" secondAttribute="centerX" id="eSf-9M-J4d"/>
+                            <constraint firstAttribute="centerX" secondItem="tZ3-Oa-eSw" secondAttribute="centerX" constant="4.5" id="g8L-EQ-Nxg"/>
+                            <constraint firstItem="QSe-vK-GO1" firstAttribute="top" secondItem="dLz-bh-rnC" secondAttribute="bottom" constant="66" id="iWh-IJ-TXX"/>
+                            <constraint firstItem="LxS-cC-Bcz" firstAttribute="centerY" secondItem="oLf-Gz-FMX" secondAttribute="centerY" id="jNT-Ub-3oV"/>
+                            <constraint firstAttribute="centerX" secondItem="LxS-cC-Bcz" secondAttribute="centerX" id="l2f-aX-Wz6"/>
+                            <constraint firstAttribute="centerX" secondItem="oLf-Gz-FMX" secondAttribute="centerX" id="ovb-yC-r70"/>
+                            <constraint firstItem="oLf-Gz-FMX" firstAttribute="top" secondItem="MlB-HF-t0k" secondAttribute="bottom" constant="44" id="xWO-B9-LYn"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Journal" image="journal" id="sZK-3C-p59"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="LxS-cC-Bcz" id="39h-yx-PPM"/>
+                        <outlet property="monthLabel" destination="XR8-pz-pBj" id="cD0-Nm-akg"/>
+                        <outlet property="yearLabel" destination="adv-qO-trX" id="ksh-g3-x3G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8j-xP-koe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846" y="-162"/>
         </scene>
     </scenes>
     <resources>

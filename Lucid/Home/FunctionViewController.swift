@@ -31,6 +31,8 @@ class FunctionViewController: UIViewController {
     @IBAction func backWasHit(sender: AnyObject) {
         navigationController?.popViewControllerAnimated(true)
     }
+    
+    
     /*
     // MARK: - Navigation
 
