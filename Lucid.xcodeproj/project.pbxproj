@@ -443,7 +443,6 @@
 				TargetAttributes = {
 					46044DA61A8EA4B800F35CC7 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 3JD8WKWUX5;
 					};
 					46044DBB1A8EA4B800F35CC7 = {
 						CreatedOnToolsVersion = 6.1.1;
