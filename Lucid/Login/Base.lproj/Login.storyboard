@@ -85,9 +85,6 @@
                                     <constraint firstAttribute="width" id="01S-M4-4tU"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-frame" translatesAutoresizingMaskIntoConstraints="NO" id="i6D-my-XqK">
-                                <rect key="frame" x="16" y="20" width="568" height="580"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -103,16 +100,12 @@
                             <constraint firstAttribute="centerX" secondItem="7ni-O2-JmY" secondAttribute="centerX" id="A1P-hz-Gtr"/>
                             <constraint firstItem="njB-1V-1hB" firstAttribute="top" secondItem="7ni-O2-JmY" secondAttribute="bottom" id="EFE-Bb-YpO"/>
                             <constraint firstItem="7ni-O2-JmY" firstAttribute="height" secondItem="yc1-qO-oiP" secondAttribute="height" id="Eni-DD-7R0"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="i6D-my-XqK" secondAttribute="bottom" id="GeF-Q8-7Y5"/>
                             <constraint firstItem="te9-ku-sIc" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Rtq-Ze-lnu"/>
                             <constraint firstAttribute="centerX" secondItem="njB-1V-1hB" secondAttribute="centerX" id="VWI-k6-zVK"/>
-                            <constraint firstItem="i6D-my-XqK" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Ycv-e0-5gT"/>
-                            <constraint firstItem="i6D-my-XqK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="a8a-eh-HN9"/>
                             <constraint firstItem="7ni-O2-JmY" firstAttribute="top" secondItem="dt2-ru-DPE" secondAttribute="bottom" id="d8R-5B-RUo"/>
                             <constraint firstItem="te9-ku-sIc" firstAttribute="height" secondItem="yc1-qO-oiP" secondAttribute="height" id="hu7-AU-gEl"/>
                             <constraint firstItem="yc1-qO-oiP" firstAttribute="top" secondItem="ygq-wK-Mta" secondAttribute="bottom" id="knq-ef-ElR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dt2-ru-DPE" secondAttribute="trailing" constant="44" id="kvE-eG-8c4"/>
-                            <constraint firstItem="i6D-my-XqK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="lfN-z5-4uL"/>
                             <constraint firstAttribute="centerX" secondItem="E5Q-M1-J9Q" secondAttribute="centerX" constant="-0.5" id="nay-Xe-Ikb"/>
                             <constraint firstAttribute="centerX" secondItem="lpq-01-jib" secondAttribute="centerX" id="p21-fP-5As"/>
                             <constraint firstAttribute="centerX" secondItem="te9-ku-sIc" secondAttribute="centerX" id="u6x-7m-8hH"/>
@@ -270,6 +263,5 @@
     </scenes>
     <resources>
         <image name="bunny-logo" width="611" height="648"/>
-        <image name="login-frame" width="1209" height="2194"/>
     </resources>
 </document>
