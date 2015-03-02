@@ -19,12 +19,15 @@ class JournalViewController: UIViewController {
     @IBOutlet weak var entryTextView: SZTextView!
 
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     let store = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addTextDismiss()
+        
+        activityIndicator.hidden = true
         
         var components:NSDateComponents = NSCalendar.currentCalendar().components(
             NSCalendarUnit.CalendarUnitYear | NSCalendarUnit.CalendarUnitMonth | NSCalendarUnit.CalendarUnitDay, fromDate: NSDate())
@@ -60,16 +63,37 @@ class JournalViewController: UIViewController {
     }
 
     @IBAction func submitButtonWasHit(sender: AnyObject) {
-        if let t = titleTextField.text {
-            if let e = entryTextView.text {
+        if titleTextField.text.utf16Count > 0 {
+            if entryTextView.text.utf16Count > 0 {
+                
+                
+                activityIndicator.hidden = false
+                view.userInteractionEnabled = false
+                
                 let journalEntry = PFObject(className: "journalEntry")
-                journalEntry["title"] = t
-                journalEntry["entry"] = e
+                journalEntry["title"] = titleTextField.text
+                journalEntry["entry"] = entryTextView.text
                 
                 let formatter = NSDateFormatter()
                 formatter.dateFormat = "yyyy-MM-dd"
                 
-                journalEntry["date"] = formatter.dateFromString("\(yearLabel.text)-\(monthLabel.text)-\(dateLabel.text)")
+                journalEntry["date"] = NSDate()//formatter.dateFromString("\(yearLabel.text)-\(monthLabel.text)-\(dateLabel.text)")
+                
+                
+                
+                journalEntry.saveInBackgroundWithBlock({ (succeeded, error) in
+                    self.activityIndicator.hidden = true
+                    self.view.userInteractionEnabled = true
+                    
+                    if error != nil {
+                        UIAlertView.showError("Uh oh", errorMessage: "Couldn't reach the internet.")
+                    } else {
+                        self.navigationController?.popViewControllerAnimated(true)
+                    }
+                
+                })
+            } else {
+                UIAlertView.showError("Uh oh", errorMessage: "Please make an entry")
             }
         } else {
             UIAlertView.showError("Uh oh", errorMessage: "Please enter a title")

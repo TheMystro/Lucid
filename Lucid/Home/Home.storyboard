@@ -219,15 +219,21 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="r1l-85-onq">
+                                <rect key="frame" x="282" y="338" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pFD-wl-4Is" firstAttribute="top" secondItem="CNF-Er-HaF" secondAttribute="bottom" constant="10" id="0mu-j2-M3Z"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pFD-wl-4Is" secondAttribute="trailing" constant="33" id="3cz-F4-7oE"/>
                             <constraint firstItem="ZbW-0D-9k9" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="88" id="6QI-YT-zn2"/>
+                            <constraint firstAttribute="centerX" secondItem="r1l-85-onq" secondAttribute="centerX" id="JNE-fm-fHM"/>
                             <constraint firstItem="at2-T9-Wdz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZbW-0D-9k9" secondAttribute="bottom" constant="1" id="LDm-vH-Ftu"/>
                             <constraint firstItem="C3h-L1-5em" firstAttribute="top" secondItem="YR1-w6-osQ" secondAttribute="bottom" constant="22" id="Mi0-Qj-ubf"/>
                             <constraint firstAttribute="centerXWithinMargins" secondItem="at2-T9-Wdz" secondAttribute="trailing" constant="44" id="RnQ-Vy-2V6"/>
+                            <constraint firstAttribute="centerY" secondItem="r1l-85-onq" secondAttribute="centerY" constant="-56" id="SYT-Zq-5GL"/>
                             <constraint firstItem="jNj-yW-Bt7" firstAttribute="top" secondItem="0Fp-Fv-kss" secondAttribute="bottom" constant="8" id="SdN-Rd-Pyh"/>
                             <constraint firstItem="822-if-g0k" firstAttribute="top" secondItem="9fP-ov-iVM" secondAttribute="bottom" constant="8" id="X9a-wf-TfN"/>
                             <constraint firstItem="CNF-Er-HaF" firstAttribute="top" secondItem="brU-NV-Duo" secondAttribute="bottom" constant="40" id="bEy-Kq-pR0"/>
@@ -253,6 +259,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Journal" image="journal" id="eL1-iF-lcD"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="r1l-85-onq" id="knB-FD-TGn"/>
                         <outlet property="backButton" destination="jNj-yW-Bt7" id="eTD-w4-SOP"/>
                         <outlet property="dateLabel" destination="9fP-ov-iVM" id="Aeh-8U-ebV"/>
                         <outlet property="entryTextView" destination="pFD-wl-4Is" id="M7r-RP-2Ah"/>
