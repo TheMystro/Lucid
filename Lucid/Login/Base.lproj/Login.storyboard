@@ -19,19 +19,19 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucid" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5Q-M1-J9Q">
-                                <rect key="frame" x="280" y="315" width="42" height="20"/>
+                                <rect key="frame" x="280" y="296" width="42" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn method to lucid dream" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dt2-ru-DPE">
-                                <rect key="frame" x="60" y="353" width="480" height="15"/>
+                                <rect key="frame" x="60" y="334" width="480" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njB-1V-1hB">
-                                <rect key="frame" x="231" y="435" width="138" height="30"/>
+                                <rect key="frame" x="231" y="425" width="138" height="30"/>
                                 <state key="normal" title="log in with facebook">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdK-tS-xd4">
-                                <rect key="frame" x="281" y="469" width="38" height="30"/>
+                                <rect key="frame" x="281" y="459" width="38" height="30"/>
                                 <state key="normal" title="log in">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygq-wK-Mta">
-                                <rect key="frame" x="275" y="503" width="51" height="30"/>
+                                <rect key="frame" x="275" y="493" width="51" height="30"/>
                                 <state key="normal" title="sign up">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,28 +60,28 @@
                                     <action selector="signupWasHit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vH5-y9-jFO"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yc1-qO-oiP">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yc1-qO-oiP">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="fIF-BU-RFd"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ni-O2-JmY">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ni-O2-JmY">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="kZG-wm-jfR"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="te9-ku-sIc">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="te9-ku-sIc">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="01S-M4-4tU"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bunny-logo" translatesAutoresizingMaskIntoConstraints="NO" id="lpq-01-jib">
-                                <rect key="frame" x="210" y="87" width="180" height="191"/>
+                                <rect key="frame" x="225" y="97" width="150" height="159"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="6yG-jq-21A"/>
+                                    <constraint firstAttribute="width" constant="150" id="6yG-jq-21A"/>
                                     <constraint firstAttribute="width" secondItem="lpq-01-jib" secondAttribute="height" multiplier="611:648" id="lYZ-mX-jQj"/>
                                 </constraints>
                             </imageView>
@@ -96,7 +96,7 @@
                             <constraint firstAttribute="centerX" secondItem="yc1-qO-oiP" secondAttribute="centerX" id="5pE-7V-MSe"/>
                             <constraint firstItem="ygq-wK-Mta" firstAttribute="top" secondItem="xdK-tS-xd4" secondAttribute="bottom" constant="4" id="6rg-uz-hfL"/>
                             <constraint firstAttribute="centerX" secondItem="ygq-wK-Mta" secondAttribute="centerX" id="7V9-i3-HKd"/>
-                            <constraint firstItem="E5Q-M1-J9Q" firstAttribute="top" secondItem="lpq-01-jib" secondAttribute="bottom" constant="37" id="8TY-F1-FyB"/>
+                            <constraint firstItem="E5Q-M1-J9Q" firstAttribute="top" secondItem="lpq-01-jib" secondAttribute="bottom" constant="40" id="8TY-F1-FyB"/>
                             <constraint firstAttribute="centerX" secondItem="7ni-O2-JmY" secondAttribute="centerX" id="A1P-hz-Gtr"/>
                             <constraint firstItem="njB-1V-1hB" firstAttribute="top" secondItem="7ni-O2-JmY" secondAttribute="bottom" id="EFE-Bb-YpO"/>
                             <constraint firstItem="7ni-O2-JmY" firstAttribute="height" secondItem="yc1-qO-oiP" secondAttribute="height" id="Eni-DD-7R0"/>
