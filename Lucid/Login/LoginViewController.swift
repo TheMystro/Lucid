@@ -61,10 +61,9 @@ class LoginViewController: UIViewController {
     @IBAction func loginWasHit(sender: AnyObject) {
         let sheet = MZFormSheetController(size: CGSize(width: view.frame.width - (2*22), height: view.frame.height - (2*22)), viewController: UIStoryboard(name: "Login", bundle: nil).instantiateViewControllerWithIdentifier("signIn") as UIViewController) as MZFormSheetController
         
-        MZFormSheetController.sharedBackgroundWindow().backgroundBlurEffect = true
-        MZFormSheetController.sharedBackgroundWindow().blurRadius = 1
-        
         sheet.transitionStyle = MZFormSheetTransitionStyle.Fade
+//        sheet.shadowRadius = 3
+        
         
         mz_presentFormSheetWithViewController(sheet, animated: true, transitionStyle: .Fade, completionHandler: nil)
     }

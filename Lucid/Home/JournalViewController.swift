@@ -42,16 +42,13 @@ class JournalViewController: UIViewController {
     }
 
     @IBAction func submitButtonWasHit(sender: AnyObject) {
-        view.frame = CGRectMake(0, 0, view.frame.width, view.frame.height)
-        
-        super.viewWillAppear(true)
+
     }
 
     @IBAction func discardButtonWasHit(sender: AnyObject) {
-        view.frame = CGRectMake(0, -40, view.frame.width, view.frame.height)
-        
-        super.viewWillAppear(true)
+
     }
+
     @IBAction func backButtonWasHit(sender: AnyObject) {
         navigationController?.popViewControllerAnimated(true)
     }
