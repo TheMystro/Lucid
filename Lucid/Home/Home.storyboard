@@ -132,12 +132,12 @@
                                 <rect key="frame" x="233" y="75" width="136" height="136"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="brU-NV-Duo" secondAttribute="height" multiplier="1:1" id="AiU-9K-Bxj"/>
-                                    <constraint firstAttribute="height" constant="136" id="jCl-oo-kEU"/>
+                                    <constraint firstAttribute="height" constant="140" id="jCl-oo-kEU"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FEB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDa-J9-sZv">
                                 <rect key="frame" x="283" y="104" width="35" height="20"/>
-                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -154,21 +154,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="entry" translatesAutoresizingMaskIntoConstraints="NO" id="pFD-wl-4Is">
-                                <rect key="frame" x="38" y="307" width="524" height="111"/>
+                                <rect key="frame" x="38" y="311" width="524" height="111"/>
                                 <color key="backgroundColor" red="0.94488918781280518" green="0.94541853666305542" blue="0.94875842332839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="111" id="TMH-hN-StZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CNF-Er-HaF">
-                                <rect key="frame" x="38" y="261" width="524" height="35"/>
+                                <rect key="frame" x="38" y="265" width="524" height="35"/>
                                 <color key="backgroundColor" red="0.94488918781280518" green="0.94541853666305542" blue="0.94875842332839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="MGQ-1Z-MM7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YR1-w6-osQ">
