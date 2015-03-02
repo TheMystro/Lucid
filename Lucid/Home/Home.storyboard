@@ -24,6 +24,7 @@
             <string>AJensonPro-Regular</string>
             <string>AJensonPro-Regular</string>
             <string>AJensonPro-Regular</string>
+            <string>AJensonPro-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -128,43 +129,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pretty-things" translatesAutoresizingMaskIntoConstraints="NO" id="brU-NV-Duo">
-                                <rect key="frame" x="233" y="75" width="136" height="136"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pretty-things" translatesAutoresizingMaskIntoConstraints="NO" id="brU-NV-Duo">
+                                <rect key="frame" x="230" y="75" width="140" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="brU-NV-Duo" secondAttribute="height" multiplier="1:1" id="AiU-9K-Bxj"/>
                                     <constraint firstAttribute="height" constant="140" id="jCl-oo-kEU"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FEB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDa-J9-sZv">
-                                <rect key="frame" x="283" y="104" width="35" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDa-J9-sZv">
+                                <rect key="frame" x="283" y="111" width="35" height="20"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fP-ov-iVM">
-                                <rect key="frame" x="290" y="130" width="20" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fP-ov-iVM">
+                                <rect key="frame" x="292" y="137" width="17" height="17"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="822-if-g0k">
-                                <rect key="frame" x="280" y="158" width="40" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="822-if-g0k">
+                                <rect key="frame" x="283" y="162" width="34" height="17"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="entry" translatesAutoresizingMaskIntoConstraints="NO" id="pFD-wl-4Is">
-                                <rect key="frame" x="38" y="311" width="524" height="111"/>
-                                <color key="backgroundColor" red="0.94488918781280518" green="0.94541853666305542" blue="0.94875842332839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFD-wl-4Is" customClass="SZTextView">
+                                <rect key="frame" x="49" y="300" width="502" height="111"/>
+                                <color key="backgroundColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="111" id="TMH-hN-StZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CNF-Er-HaF">
-                                <rect key="frame" x="38" y="265" width="524" height="35"/>
-                                <color key="backgroundColor" red="0.94488918781280518" green="0.94541853666305542" blue="0.94875842332839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CNF-Er-HaF">
+                                <rect key="frame" x="49" y="255" width="502" height="35"/>
+                                <color key="backgroundColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="MGQ-1Z-MM7"/>
                                 </constraints>
@@ -172,7 +173,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YR1-w6-osQ">
-                                <rect key="frame" x="344" y="452" width="47" height="29"/>
+                                <rect key="frame" x="344" y="500" width="47" height="29"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="17"/>
                                 <state key="normal" title="discard">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -183,7 +184,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="at2-T9-Wdz">
-                                <rect key="frame" x="211" y="452" width="45" height="29"/>
+                                <rect key="frame" x="211" y="500" width="45" height="29"/>
                                 <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="17"/>
                                 <state key="normal" title="submit">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -202,30 +203,52 @@
                                     <action selector="backButtonWasHit:" destination="Gye-xr-0eG" eventType="touchUpInside" id="iuj-dw-GIt"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdG-1Y-EaV">
+                                <rect key="frame" x="49" y="294" width="502" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="lif-Da-IMI"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbW-0D-9k9">
+                                <rect key="frame" x="104" y="449" width="392" height="30"/>
+                                <color key="backgroundColor" red="0.94488918781280518" green="0.94541853666305542" blue="0.94875842332839966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AJensonPro-Regular" family="Adobe Jenson Pro" pointSize="18"/>
+                                <state key="normal" title="Stats">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pFD-wl-4Is" firstAttribute="top" secondItem="CNF-Er-HaF" secondAttribute="bottom" constant="11" id="0mu-j2-M3Z"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pFD-wl-4Is" secondAttribute="trailing" constant="22" id="3cz-F4-7oE"/>
-                            <constraint firstItem="C3h-L1-5em" firstAttribute="top" secondItem="YR1-w6-osQ" secondAttribute="bottom" constant="70" id="Mi0-Qj-ubf"/>
+                            <constraint firstItem="pFD-wl-4Is" firstAttribute="top" secondItem="CNF-Er-HaF" secondAttribute="bottom" constant="10" id="0mu-j2-M3Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pFD-wl-4Is" secondAttribute="trailing" constant="33" id="3cz-F4-7oE"/>
+                            <constraint firstItem="ZbW-0D-9k9" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="88" id="6QI-YT-zn2"/>
+                            <constraint firstItem="at2-T9-Wdz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZbW-0D-9k9" secondAttribute="bottom" constant="1" id="LDm-vH-Ftu"/>
+                            <constraint firstItem="C3h-L1-5em" firstAttribute="top" secondItem="YR1-w6-osQ" secondAttribute="bottom" constant="22" id="Mi0-Qj-ubf"/>
                             <constraint firstAttribute="centerXWithinMargins" secondItem="at2-T9-Wdz" secondAttribute="trailing" constant="44" id="RnQ-Vy-2V6"/>
                             <constraint firstItem="jNj-yW-Bt7" firstAttribute="top" secondItem="0Fp-Fv-kss" secondAttribute="bottom" constant="8" id="SdN-Rd-Pyh"/>
                             <constraint firstItem="822-if-g0k" firstAttribute="top" secondItem="9fP-ov-iVM" secondAttribute="bottom" constant="8" id="X9a-wf-TfN"/>
-                            <constraint firstItem="CNF-Er-HaF" firstAttribute="top" secondItem="brU-NV-Duo" secondAttribute="bottom" constant="50" id="bEy-Kq-pR0"/>
+                            <constraint firstItem="CNF-Er-HaF" firstAttribute="top" secondItem="brU-NV-Duo" secondAttribute="bottom" constant="40" id="bEy-Kq-pR0"/>
+                            <constraint firstItem="ZbW-0D-9k9" firstAttribute="top" secondItem="pFD-wl-4Is" secondAttribute="bottom" constant="38" id="ceR-5D-3Vv"/>
                             <constraint firstItem="brU-NV-Duo" firstAttribute="top" secondItem="0Fp-Fv-kss" secondAttribute="bottom" constant="55" id="ch0-fq-RgJ"/>
                             <constraint firstAttribute="centerX" secondItem="HDa-J9-sZv" secondAttribute="centerX" id="cnK-12-gZ4"/>
-                            <constraint firstItem="CNF-Er-HaF" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="22" id="czA-nM-yyO"/>
+                            <constraint firstItem="CNF-Er-HaF" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="33" id="czA-nM-yyO"/>
                             <constraint firstItem="9fP-ov-iVM" firstAttribute="centerY" secondItem="brU-NV-Duo" secondAttribute="centerY" id="fhV-lt-EuK"/>
-                            <constraint firstItem="C3h-L1-5em" firstAttribute="top" secondItem="at2-T9-Wdz" secondAttribute="bottom" constant="70" id="g36-LO-ZJT"/>
+                            <constraint firstItem="C3h-L1-5em" firstAttribute="top" secondItem="at2-T9-Wdz" secondAttribute="bottom" constant="22" id="g36-LO-ZJT"/>
                             <constraint firstAttribute="centerX" secondItem="822-if-g0k" secondAttribute="centerX" id="g5V-yO-jMf"/>
                             <constraint firstAttribute="centerX" secondItem="brU-NV-Duo" secondAttribute="centerX" id="gtE-ZY-Hzo"/>
+                            <constraint firstItem="pFD-wl-4Is" firstAttribute="top" secondItem="fdG-1Y-EaV" secondAttribute="bottom" constant="5" id="kHl-dW-OAu"/>
                             <constraint firstItem="9fP-ov-iVM" firstAttribute="top" secondItem="HDa-J9-sZv" secondAttribute="bottom" constant="6" id="maI-ov-ezV"/>
                             <constraint firstItem="jNj-yW-Bt7" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" id="nGg-xf-rPF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CNF-Er-HaF" secondAttribute="trailing" constant="22" id="nWD-jk-ajC"/>
-                            <constraint firstItem="at2-T9-Wdz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pFD-wl-4Is" secondAttribute="bottom" priority="999" constant="3" id="q1b-mE-saS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CNF-Er-HaF" secondAttribute="trailing" constant="33" id="nWD-jk-ajC"/>
+                            <constraint firstItem="fdG-1Y-EaV" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="33" id="pbP-JH-gra"/>
                             <constraint firstItem="YR1-w6-osQ" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="centerXWithinMargins" constant="44" id="qJ2-ad-hk7"/>
-                            <constraint firstItem="pFD-wl-4Is" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="22" id="s58-zc-R71"/>
+                            <constraint firstItem="pFD-wl-4Is" firstAttribute="leading" secondItem="AaI-UG-dQq" secondAttribute="leadingMargin" constant="33" id="s58-zc-R71"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZbW-0D-9k9" secondAttribute="trailing" constant="88" id="skP-Do-uAr"/>
                             <constraint firstAttribute="centerX" secondItem="9fP-ov-iVM" secondAttribute="centerX" id="toR-0a-0Ch"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fdG-1Y-EaV" secondAttribute="trailing" constant="33" id="ues-hT-mSM"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Journal" image="journal" id="eL1-iF-lcD"/>
@@ -240,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8X-zN-qXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2143" y="80"/>
+            <point key="canvasLocation" x="2169" y="135"/>
         </scene>
         <!--Home-->
         <scene sceneID="vcQ-sF-ryQ">
@@ -566,7 +589,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vZ-66-U6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="nr0-CJ-Kch" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2221" y="1271"/>
+            <point key="canvasLocation" x="2233" y="1323"/>
         </scene>
         <!--Settings-->
         <scene sceneID="fMZ-hn-VNo">

@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Andrew Breckenridge. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 class JournalViewController: UIViewController {
@@ -15,17 +16,29 @@ class JournalViewController: UIViewController {
     @IBOutlet weak var yearLabel: UILabel!
     
     @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var entryTextView: UITextView!
+    @IBOutlet weak var entryTextView: SZTextView!
 
     @IBOutlet weak var backButton: UIButton!
+    
+    let store = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addTextDismiss()
         
+        var components:NSDateComponents = NSCalendar.currentCalendar().components(
+            NSCalendarUnit.CalendarUnitYear | NSCalendarUnit.CalendarUnitMonth | NSCalendarUnit.CalendarUnitDay, fromDate: NSDate())
+        
+        dateLabel.text = "\(components.day)"
+        monthLabel.text = "\(components.month)"
+        yearLabel.text = "\(components.year)"
+
+        
         let spacerView = UIView(frame: CGRectMake(0, 0, 10, 10))
         titleTextField.leftViewMode = .Always
         titleTextField.leftView = spacerView
+        
+        entryTextView.textContainerInset = UIEdgeInsetsMake(0, 7, 0, 0)
         
         let v = UIView(frame: CGRectMake(0, 0, 80, view.frame.size.height))
         let gestureRecog = UISwipeGestureRecognizer(target: self, action: "swipeBack:")
@@ -33,6 +46,11 @@ class JournalViewController: UIViewController {
         
         v.addGestureRecognizer(gestureRecog)
         view.addSubview(v)
+        
+        entryTextView.placeholder = "Entry"
+        
+        titleTextField.text = store.objectForKey("saved-journal-title") as String?
+        entryTextView.text = store.objectForKey("saved-journal-entry") as String?
         
         view.bringSubviewToFront(backButton)
     }
@@ -42,24 +60,38 @@ class JournalViewController: UIViewController {
     }
 
     @IBAction func submitButtonWasHit(sender: AnyObject) {
-
+        if let t = titleTextField.text {
+            if let e = entryTextView.text {
+                let journalEntry = PFObject(className: "journalEntry")
+                journalEntry["title"] = t
+                journalEntry["entry"] = e
+                
+                let formatter = NSDateFormatter()
+                formatter.dateFormat = "yyyy-MM-dd"
+                
+                journalEntry["date"] = formatter.dateFromString("\(yearLabel.text)-\(monthLabel.text)-\(dateLabel.text)")
+            }
+        } else {
+            UIAlertView.showError("Uh oh", errorMessage: "Please enter a title")
+        }
     }
 
     @IBAction func discardButtonWasHit(sender: AnyObject) {
-
+        titleTextField.text = ""
+        entryTextView.text = ""
     }
 
     @IBAction func backButtonWasHit(sender: AnyObject) {
         navigationController?.popViewControllerAnimated(true)
     }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        store.setValue(titleTextField.text, forKey: "saved-journal-title")
+        store.setValue(entryTextView.text, forKey: "saved-journal-entry")
     }
-    */
+    
 
 }

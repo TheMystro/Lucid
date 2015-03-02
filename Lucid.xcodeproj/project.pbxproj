@@ -28,6 +28,7 @@
 		461DD9B31AA1E19600365C3E /* UIRoundedButtonWhite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DD9B11AA1E19600365C3E /* UIRoundedButtonWhite.swift */; };
 		461DD9B61AA1E1A700365C3E /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DD9B51AA1E1A700365C3E /* UIColorExtensions.swift */; };
 		461DD9BA1AA1E62000365C3E /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DD9B91AA1E62000365C3E /* FunctionViewController.swift */; };
+		4658C2A21AA3FE1B001C124D /* AlertViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658C2A11AA3FE1B001C124D /* AlertViewHelper.swift */; };
 		465F92F71A96A02100BE0566 /* Adobe Jenson Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 465F92F61A96A01E00BE0566 /* Adobe Jenson Pro.ttf */; };
 		465F92F91A96A0F500BE0566 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F92F81A96A0F500BE0566 /* LoginViewController.swift */; };
 		4663DF241A96AFAC00DCE3EE /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4663DF231A96AFAC00DCE3EE /* UILabelExtension.swift */; };
@@ -102,6 +103,7 @@
 		461DD9B11AA1E19600365C3E /* UIRoundedButtonWhite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRoundedButtonWhite.swift; sourceTree = "<group>"; };
 		461DD9B51AA1E1A700365C3E /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		461DD9B91AA1E62000365C3E /* FunctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
+		4658C2A11AA3FE1B001C124D /* AlertViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewHelper.swift; sourceTree = "<group>"; };
 		465F92F61A96A01E00BE0566 /* Adobe Jenson Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adobe Jenson Pro.ttf"; sourceTree = "<group>"; };
 		465F92F81A96A0F500BE0566 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4663DF231A96AFAC00DCE3EE /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 				4663DF4D1A96B5B700DCE3EE /* UIViewControllerExtension.swift */,
 				461DD9B51AA1E1A700365C3E /* UIColorExtensions.swift */,
 				4663DF231A96AFAC00DCE3EE /* UILabelExtension.swift */,
+				4658C2A11AA3FE1B001C124D /* AlertViewHelper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 				46044DAD1A8EA4B800F35CC7 /* AppDelegate.swift in Sources */,
 				461DD9B21AA1E19600365C3E /* UIRoundedButton.swift in Sources */,
 				461DB2A81AA0532E000AACF4 /* TutorialPagesViewController.swift in Sources */,
+				4658C2A21AA3FE1B001C124D /* AlertViewHelper.swift in Sources */,
 				461DB2AA1AA053A0000AACF4 /* TutorialPageVC.swift in Sources */,
 				461DD9A11AA1BD6D00365C3E /* SettingsViewController.swift in Sources */,
 				46F8DB4F1AA3087F001431A4 /* JournalPickerViewController.swift in Sources */,
