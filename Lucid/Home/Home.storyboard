@@ -194,9 +194,13 @@
                                     <action selector="submitButtonWasHit:" destination="Gye-xr-0eG" eventType="touchUpInside" id="vGX-fX-LHy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNj-yW-Bt7">
-                                <rect key="frame" x="16" y="28" width="44" height="30"/>
-                                <state key="normal" title="or nah">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNj-yW-Bt7">
+                                <rect key="frame" x="16" y="28" width="9" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jNj-yW-Bt7" secondAttribute="height" multiplier="4:7" id="Q6A-ir-vnk"/>
+                                    <constraint firstAttribute="height" constant="15" id="rY7-qv-Pdd"/>
+                                </constraints>
+                                <state key="normal" image="back-arrow">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -734,6 +738,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back-arrow" width="37" height="65"/>
         <image name="home" width="19" height="27"/>
         <image name="journal" width="26" height="24"/>
         <image name="methods" width="28" height="24"/>
