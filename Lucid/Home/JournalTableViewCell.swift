@@ -21,7 +21,30 @@ class JournalTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        buttonImageView.image = UIImage(CGImage: buttonImageView.image?.CGImage!, scale: buttonImageView.image?.scale as CGFloat!, orientation: .DownMirrored)
+        
+        var offset: CGFloat = 4
+        
+        tagView.backgroundColor = UIColor.redColor()
+        
+//        for i in ["sex", "or", "nah", "with", "music", "boy"] {
+//            let l = UILabel()
+//            l.text = i
+//            l.frame = CGRectMake(offset + l.frame.origin.x, l.frame.origin.y, l.frame.width, l.frame.height)
+//            
+//            
+//            l.backgroundColor = UIColor.blackColor()
+//            l.textColor = UIColor.whiteColor()
+//            
+//            tagView.addSubview(l)
+//            
+//            offset += l.frame.width + 4
+//        }
+        let l = UILabel(frame: CGRectMake(5, 1, 20, 4))
+        l.textColor = UIColor.greenColor()
+        l.text = "suck or nah"
+        
+        tagView.addSubview(l)
+        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

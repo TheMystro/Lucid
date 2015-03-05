@@ -19,17 +19,25 @@ class JournalTableViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 50
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 70
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cellID") as JournalTableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("cellID") as JournalTableViewCell?
         
-//        if cell == nil {
-//            cell = JournalTableViewCell()
-//        }
+        if cell == nil {
+            cell = JournalTableViewCell()
+        }
         
-        return cell
+        return cell!
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("showDetail", sender: self)
     }
     
     
