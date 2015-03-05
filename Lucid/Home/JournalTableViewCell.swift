@@ -22,38 +22,25 @@ class JournalTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        var offset: CGFloat = 4
+        var offset: CGFloat = 0
         
         
-//        for i in ["sex", "or", "nah", "with", "music", "boy"] {
-//            let l = UILabel()
-//            l.text = i
-//            l.frame = CGRectMake(offset + l.frame.origin.x, l.frame.origin.y, l.frame.width, l.frame.height)
-//            
-//            
-//            l.backgroundColor = UIColor.blackColor()
-//            l.textColor = UIColor.whiteColor()
-//            
-//            tagView.addSubview(l)
-//            
-//            offset += l.frame.width + 4
-//        }
-        let l = UILabel()
+        for i in ["sex", "or", "nah", "with", "music", "boy"] {
+            let l = UILabel()
+            l.textColor = UIColor.whiteColor()
+            l.backgroundColor = UIColor.blackColor()
+            l.font = UIFont(name: "Cronos Pro", size: 13)
 
-        l.backgroundColor = UIColor.blackColor()
-        l.textColor = UIColor.whiteColor()
-        l.font = UIFont(name: "Cronos Pro", size: 12)
-        
-        l.text = "suck or nah"
-        
-        l.sizeToFit()
-        l.frame = CGRectMake(l.frame.origin.x - 2.5, l.frame.origin.y, l.frame.width + 5, l.frame.height + 3)
-        
-        l.layer.cornerRadius = l.frame.height/2
-        l.clipsToBounds = true
-        
-        tagView.addSubview(l)
-        
+            l.sizeToFit()
+            l.frame = CGRectMake(offset + l.frame.origin.x - 1, l.frame.origin.y, l.frame.width + 4, l.frame.height)
+            
+            l.layer.cornerRadius = l.frame.height / 2
+            l.clipsToBounds = true
+            
+            tagView.addSubview(l)
+            
+            offset += l.frame.width + 4
+        }
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
