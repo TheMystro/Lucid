@@ -41,7 +41,7 @@ class JournalTableViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     
-    
+    @IBAction func unwindToJournalTable() {}
     
     /*
     // MARK: - Navigation

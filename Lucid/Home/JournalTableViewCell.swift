@@ -39,9 +39,11 @@ class JournalTableViewCell: UITableViewCell {
 //            
 //            offset += l.frame.width + 4
 //        }
-        let l = UILabel(frame: CGRectMake(5, 1, 20, 4))
+        let l = UILabel()
         l.textColor = UIColor.greenColor()
         l.text = "suck or nah"
+//        l.frame = CGRectMake(5, 1, 20, 4)
+        l.sizeToFit()
         
         tagView.addSubview(l)
         

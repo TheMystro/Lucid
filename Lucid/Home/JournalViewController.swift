@@ -98,10 +98,6 @@ class JournalViewController: UIViewController {
         titleTextField.text = ""
         entryTextView.text = ""
     }
-
-    @IBAction func backButtonWasHit(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true)
-    }
     
     // MARK: - Navigation
 
