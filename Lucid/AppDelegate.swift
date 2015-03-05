@@ -31,9 +31,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = (UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController)
         window?.makeKeyAndVisible()
         
+        printFonts()
+        
+        
         return true
     }
 
+    func printFonts() {
+        let fontFamilyNames = UIFont.familyNames()
+        for familyName in fontFamilyNames {
+            println("------------------------------")
+            println("Font Family Name = [\(familyName)]")
+            let names = UIFont.fontNamesForFamilyName(familyName as String)
+            println("Font Names = [\(names)]")
+        }
+    }
     
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
         return FBAppCall.handleOpenURL(url, sourceApplication: sourceApplication, withSession: PFFacebookUtils.session())

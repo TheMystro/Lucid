@@ -24,7 +24,6 @@ class JournalTableViewCell: UITableViewCell {
         
         var offset: CGFloat = 4
         
-        tagView.backgroundColor = UIColor.redColor()
         
 //        for i in ["sex", "or", "nah", "with", "music", "boy"] {
 //            let l = UILabel()
@@ -40,10 +39,18 @@ class JournalTableViewCell: UITableViewCell {
 //            offset += l.frame.width + 4
 //        }
         let l = UILabel()
-        l.textColor = UIColor.greenColor()
+
+        l.backgroundColor = UIColor.blackColor()
+        l.textColor = UIColor.whiteColor()
+        l.font = UIFont(name: "Cronos Pro", size: 12)
+        
         l.text = "suck or nah"
-//        l.frame = CGRectMake(5, 1, 20, 4)
+        
         l.sizeToFit()
+        l.frame = CGRectMake(l.frame.origin.x - 2.5, l.frame.origin.y, l.frame.width + 5, l.frame.height + 3)
+        
+        l.layer.cornerRadius = l.frame.height/2
+        l.clipsToBounds = true
         
         tagView.addSubview(l)
         

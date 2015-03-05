@@ -14,6 +14,14 @@
 		46044DC31A8EA4B800F35CC7 /* LucidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46044DC21A8EA4B800F35CC7 /* LucidTests.swift */; };
 		461601961AA801D0008F9936 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461601951AA801D0008F9936 /* JournalTableViewController.swift */; };
 		461601981AA80228008F9936 /* JournalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461601971AA80228008F9936 /* JournalTableViewCell.swift */; };
+		4616019B1AA815EE008F9936 /* CronosPro-Subh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 461DD9A71AA1DE5400365C3E /* CronosPro-Subh.otf */; };
+		4616019C1AA815EE008F9936 /* CronosPro-BoldSubh.otf in Resources */ = {isa = PBXBuildFile; fileRef = 461DD9A81AA1DE5B00365C3E /* CronosPro-BoldSubh.otf */; };
+		4616019D1AA815EE008F9936 /* CronosPro-BoldCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 461DD9AA1AA1DE7400365C3E /* CronosPro-BoldCapt.otf */; };
+		4616019E1AA815EE008F9936 /* CronosPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 461DD9AB1AA1DE8200365C3E /* CronosPro-Bold.otf */; };
+		4616019F1AA815EE008F9936 /* CronosPro-LtCapt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 461DD9AC1AA1DE8B00365C3E /* CronosPro-LtCapt.otf */; };
+		461601A01AA815EE008F9936 /* CronosPro-SubhIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 461DD9AD1AA1DE9A00365C3E /* CronosPro-SubhIt.otf */; };
+		461601A11AA815EE008F9936 /* CronosPro-SemiboldSubhIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 461DD9AE1AA1DEA100365C3E /* CronosPro-SemiboldSubhIt.otf */; };
+		461601A21AA815EE008F9936 /* CronosPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 461DD9AF1AA1DEA800365C3E /* CronosPro-Regular.otf */; };
 		461DB2A81AA0532E000AACF4 /* TutorialPagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DB2A71AA0532E000AACF4 /* TutorialPagesViewController.swift */; };
 		461DB2AA1AA053A0000AACF4 /* TutorialPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DB2A91AA053A0000AACF4 /* TutorialPageVC.swift */; };
 		461DB2AC1AA055A8000AACF4 /* TutorialPageViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DB2AB1AA055A8000AACF4 /* TutorialPageViewControllerDataSource.swift */; };
@@ -481,13 +489,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461601A21AA815EE008F9936 /* CronosPro-Regular.otf in Resources */,
 				461DB3D31AA06161000AACF4 /* FBAudienceNetwork.README.txt in Resources */,
+				4616019D1AA815EE008F9936 /* CronosPro-BoldCapt.otf in Resources */,
 				46044DB21A8EA4B800F35CC7 /* Login.storyboard in Resources */,
 				466C771F1A97CCBE005B1457 /* Home.storyboard in Resources */,
+				4616019F1AA815EE008F9936 /* CronosPro-LtCapt.otf in Resources */,
+				4616019E1AA815EE008F9936 /* CronosPro-Bold.otf in Resources */,
+				461601A11AA815EE008F9936 /* CronosPro-SemiboldSubhIt.otf in Resources */,
 				461DB3D41AA06161000AACF4 /* LICENSE in Resources */,
 				465F92F71A96A02100BE0566 /* Adobe Jenson Pro.ttf in Resources */,
+				461601A01AA815EE008F9936 /* CronosPro-SubhIt.otf in Resources */,
 				46044DB71A8EA4B800F35CC7 /* LaunchScreen.xib in Resources */,
 				461DB3D51AA06161000AACF4 /* README.txt in Resources */,
+				4616019B1AA815EE008F9936 /* CronosPro-Subh.otf in Resources */,
+				4616019C1AA815EE008F9936 /* CronosPro-BoldSubh.otf in Resources */,
 				46044DB41A8EA4B800F35CC7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
