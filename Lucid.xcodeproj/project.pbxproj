@@ -12,6 +12,8 @@
 		46044DB41A8EA4B800F35CC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46044DB31A8EA4B800F35CC7 /* Images.xcassets */; };
 		46044DB71A8EA4B800F35CC7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46044DB51A8EA4B800F35CC7 /* LaunchScreen.xib */; };
 		46044DC31A8EA4B800F35CC7 /* LucidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46044DC21A8EA4B800F35CC7 /* LucidTests.swift */; };
+		461601961AA801D0008F9936 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461601951AA801D0008F9936 /* JournalTableViewController.swift */; };
+		461601981AA80228008F9936 /* JournalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461601971AA80228008F9936 /* JournalTableViewCell.swift */; };
 		461DB2A81AA0532E000AACF4 /* TutorialPagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DB2A71AA0532E000AACF4 /* TutorialPagesViewController.swift */; };
 		461DB2AA1AA053A0000AACF4 /* TutorialPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DB2A91AA053A0000AACF4 /* TutorialPageVC.swift */; };
 		461DB2AC1AA055A8000AACF4 /* TutorialPageViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DB2AB1AA055A8000AACF4 /* TutorialPageViewControllerDataSource.swift */; };
@@ -78,6 +80,8 @@
 		46044DBC1A8EA4B800F35CC7 /* LucidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LucidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46044DC11A8EA4B800F35CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46044DC21A8EA4B800F35CC7 /* LucidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LucidTests.swift; sourceTree = "<group>"; };
+		461601951AA801D0008F9936 /* JournalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
+		461601971AA80228008F9936 /* JournalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalTableViewCell.swift; sourceTree = "<group>"; };
 		461DB2A71AA0532E000AACF4 /* TutorialPagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPagesViewController.swift; sourceTree = "<group>"; };
 		461DB2A91AA053A0000AACF4 /* TutorialPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageVC.swift; sourceTree = "<group>"; };
 		461DB2AB1AA055A8000AACF4 /* TutorialPageViewControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageViewControllerDataSource.swift; sourceTree = "<group>"; };
@@ -266,6 +270,8 @@
 				46F8DB4E1AA3087F001431A4 /* JournalPickerViewController.swift */,
 				46F812E01AA272650036F887 /* JournalViewController.swift */,
 				46F8DB501AA30999001431A4 /* SeeJournalViewController.swift */,
+				461601971AA80228008F9936 /* JournalTableViewCell.swift */,
+				461601951AA801D0008F9936 /* JournalTableViewController.swift */,
 				461DD9A41AA1C33800365C3E /* Settings */,
 			);
 			path = Home;
@@ -547,6 +553,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461601981AA80228008F9936 /* JournalTableViewCell.swift in Sources */,
 				46F8DB511AA30999001431A4 /* SeeJournalViewController.swift in Sources */,
 				4663DF4E1A96B5B700DCE3EE /* UIViewControllerExtension.swift in Sources */,
 				461DD9B31AA1E19600365C3E /* UIRoundedButtonWhite.swift in Sources */,
@@ -563,6 +570,7 @@
 				4658C2A21AA3FE1B001C124D /* AlertViewHelper.swift in Sources */,
 				461DB2AA1AA053A0000AACF4 /* TutorialPageVC.swift in Sources */,
 				461DD9A11AA1BD6D00365C3E /* SettingsViewController.swift in Sources */,
+				461601961AA801D0008F9936 /* JournalTableViewController.swift in Sources */,
 				46F8DB4F1AA3087F001431A4 /* JournalPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

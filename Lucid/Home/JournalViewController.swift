@@ -19,15 +19,12 @@ class JournalViewController: UIViewController {
     @IBOutlet weak var entryTextView: SZTextView!
 
     @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     let store = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addTextDismiss()
-        
-        activityIndicator.hidden = true
         
         var components:NSDateComponents = NSCalendar.currentCalendar().components(
             NSCalendarUnit.CalendarUnitYear | NSCalendarUnit.CalendarUnitMonth | NSCalendarUnit.CalendarUnitDay, fromDate: NSDate())
@@ -66,8 +63,6 @@ class JournalViewController: UIViewController {
         if titleTextField.text.utf16Count > 0 {
             if entryTextView.text.utf16Count > 0 {
                 
-                
-                activityIndicator.hidden = false
                 view.userInteractionEnabled = false
                 
                 let journalEntry = PFObject(className: "journalEntry")
@@ -82,7 +77,6 @@ class JournalViewController: UIViewController {
                 
                 
                 journalEntry.saveInBackgroundWithBlock({ (succeeded, error) in
-                    self.activityIndicator.hidden = true
                     self.view.userInteractionEnabled = true
                     
                     if error != nil {
