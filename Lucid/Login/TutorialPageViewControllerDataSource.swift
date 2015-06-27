@@ -13,7 +13,7 @@ class TutorialPageViewControllerDataSource: NSObject, UIPageViewControllerDataSo
     var currentIndex: Int = Int()
     
     func viewControllerAtIndex(index: Int) -> TutorialPageVC? {
-        let vc = UIStoryboard(name: "Login", bundle: nil).instantiateViewControllerWithIdentifier("tutorialPageVC") as TutorialPageVC
+        let vc = UIStoryboard(name: "Login", bundle: nil).instantiateViewControllerWithIdentifier("tutorialPageVC") as! TutorialPageVC
         
         currentIndex = index
         vc.pageIndex = currentIndex
@@ -25,14 +25,14 @@ class TutorialPageViewControllerDataSource: NSObject, UIPageViewControllerDataSo
     
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        var index = (viewController as TutorialPageVC).pageIndex
+        var index = (viewController as! TutorialPageVC).pageIndex
         
         switch index {
         case 0:
             return nil
         case NSNotFound:
             fatalError("NSNotFound")
-        case pageTitles.count...Int.max:
+        case pageTitles.count...(Int.max - 1):
             return nil
         default:
             index--
@@ -41,7 +41,7 @@ class TutorialPageViewControllerDataSource: NSObject, UIPageViewControllerDataSo
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        var index = (viewController as TutorialPageVC).pageIndex
+        var index = (viewController as! TutorialPageVC).pageIndex
         index++
         
         switch index {
@@ -49,7 +49,7 @@ class TutorialPageViewControllerDataSource: NSObject, UIPageViewControllerDataSo
             return nil
         case NSNotFound:
             fatalError("NSNotFound")
-        case pageTitles.count...Int.max:
+        case pageTitles.count...(Int.max-1):
             return nil
         default:
             return viewControllerAtIndex(index)

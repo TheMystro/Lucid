@@ -38,13 +38,13 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func goOrNahClick(sender: AnyObject) {
-        let homeViewController = UIStoryboard(name: "Home", bundle: nil).instantiateInitialViewController() as UIViewController
+        let homeViewController = UIStoryboard(name: "Home", bundle: nil).instantiateInitialViewController() as! UIViewController
         
         navigationController?.pushViewController(homeViewController, animated: true)
     }
     
     @IBAction func loginWithFacebookWasHit(sender: AnyObject) {
-        PFFacebookUtils.logInWithPermissions(["public_profile", "user_friends", "email"], {
+        PFFacebookUtils.logInWithPermissions(["public_profile", "user_friends", "email"], block: {
             (user: PFUser!, error: NSError!) -> Void in
             if user == nil {
                 NSLog("Uh oh. The user cancelled the Facebook login.")
@@ -59,7 +59,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginWasHit(sender: AnyObject) {
-        let sheet = MZFormSheetController(size: CGSize(width: view.frame.width - (2*22), height: view.frame.height - (2*22)), viewController: UIStoryboard(name: "Login", bundle: nil).instantiateViewControllerWithIdentifier("signIn") as UIViewController) as MZFormSheetController
+        let sheet = MZFormSheetController(size: CGSize(width: view.frame.width - (2*22), height: view.frame.height - (2*22)), viewController: UIStoryboard(name: "Login", bundle: nil).instantiateViewControllerWithIdentifier("signIn") as! UIViewController) as MZFormSheetController
         
         sheet.transitionStyle = MZFormSheetTransitionStyle.Fade
 //        sheet.shadowRadius = 3

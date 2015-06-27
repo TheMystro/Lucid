@@ -27,7 +27,7 @@ class JournalTableViewController: UIViewController, UITableViewDelegate, UITable
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cellID") as JournalTableViewCell?
+        var cell = tableView.dequeueReusableCellWithIdentifier("cellID") as! JournalTableViewCell?
         
         if cell == nil {
             cell = JournalTableViewCell()

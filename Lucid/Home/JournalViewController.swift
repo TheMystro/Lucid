@@ -49,8 +49,8 @@ class JournalViewController: UIViewController {
         
         entryTextView.placeholder = "Entry"
         
-        titleTextField.text = store.objectForKey("saved-journal-title") as String?
-        entryTextView.text = store.objectForKey("saved-journal-entry") as String?
+        titleTextField.text = store.objectForKey("saved-journal-title") as! String?
+        entryTextView.text = store.objectForKey("saved-journal-entry") as! String?
         
         view.bringSubviewToFront(backButton)
     }
@@ -60,8 +60,8 @@ class JournalViewController: UIViewController {
     }
 
     @IBAction func submitButtonWasHit(sender: AnyObject) {
-        if titleTextField.text.utf16Count > 0 {
-            if entryTextView.text.utf16Count > 0 {
+        if count(titleTextField.text.utf16) > 0 {
+            if count(entryTextView.text.utf16) > 0 {
                 
                 view.userInteractionEnabled = false
                 

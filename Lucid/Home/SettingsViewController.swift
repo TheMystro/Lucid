@@ -25,13 +25,13 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         var cell: UITableViewCell
         
         if indexPath.row == 0 {
-            cell = tableView.dequeueReusableCellWithIdentifier("header") as UITableViewCell
+            cell = tableView.dequeueReusableCellWithIdentifier("header") as! UITableViewCell
         } else {
             switch indexPath.section {
             case 4:
-                cell = tableView.dequeueReusableCellWithIdentifier("mainVolumeCell") as UITableViewCell
+                cell = tableView.dequeueReusableCellWithIdentifier("mainVolumeCell") as! UITableViewCell
             default:
-                cell = tableView.dequeueReusableCellWithIdentifier("mainCell") as UITableViewCell
+                cell = tableView.dequeueReusableCellWithIdentifier("mainCell") as! UITableViewCell
                 cell.accessoryType = .DisclosureIndicator
             }
         }
